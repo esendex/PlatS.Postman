@@ -676,7 +676,7 @@
 											"    body: {}\r",
 											"}, function (err, res) {\r",
 											"    responseJson  = res.json();\r",
-											"    pm.test(\"Check that DELETE request actually deleted the contact, by GET request\", function () {\r",
+											"    pm.test(\"RequestName_Delete_TestName_Check that DELETE request actually deleted the contact, by GET request\", function () {\r",
 											"        pm.expect(responseJson.errors[0].error).to.eql(\"The requested contact could not be found.\");\r",
 											"        pm.expect(responseJson.errors[0].code).to.eql(\"contact_not_found\");\r",
 											"        });\r",
