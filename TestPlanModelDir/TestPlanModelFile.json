@@ -51,7 +51,7 @@
 											"var expectedContactID = pm.variables.replaceIn('{{contactId}}');\r",
 											"var responseJson  = pm.response.json();\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+											"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 											"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 											"});\r",
 											"\r",
@@ -73,7 +73,7 @@
 											"  ]\r",
 											"};\r",
 											"\r",
-											"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+											"pm.test('Check if Schema is valid', function () {\r",
 											"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 											"});\r",
 											"\r",
@@ -84,7 +84,7 @@
 									}
 								}
 							],
-							"_postman_id": "13feecb1-93b0-423f-8779-1cff62e71748",
+							"id": "13feecb1-93b0-423f-8779-1cff62e71748",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -174,7 +174,7 @@
 											"var expectedMsisdn = pm.variables.replaceIn('{{msisdn}}');\r",
 											"var responseJson  = pm.response.json();\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+											"pm.test(\"Check expected values\", function () {\r",
 											"    pm.expect(responseJson.id).to.eql(expectedContactID);\r",
 											"    pm.expect(responseJson.eTag).to.eql(expectedEtag);\r",
 											"    pm.expect(responseJson.accountId).to.eql(expectedAccountId);\r",
@@ -246,7 +246,7 @@
 											"  ]\r",
 											"};\r",
 											"\r",
-											"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+											"pm.test('Check if Schema is valid', function () {\r",
 											"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 											"});\r",
 											""
@@ -255,7 +255,7 @@
 									}
 								}
 							],
-							"_postman_id": "4eea854c-ffcc-4d56-be50-90c30b26e97c",
+							"id": "4eea854c-ffcc-4d56-be50-90c30b26e97c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -365,7 +365,7 @@
 											"var expectedContactID = pm.variables.replaceIn('{{contactId}}');\r",
 											"var responseJson  = pm.response.json();\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+											"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 											"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 											"});\r",
 											"\r",
@@ -388,7 +388,7 @@
 											"};\r",
 											"\r",
 											"\r",
-											"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+											"pm.test('Check if Schema is valid', function () {\r",
 											"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 											"});\r",
 											"\r",
@@ -399,7 +399,7 @@
 									}
 								}
 							],
-							"_postman_id": "d5472ac9-0b26-45a0-a024-9206603b2b54",
+							"id": "d5472ac9-0b26-45a0-a024-9206603b2b54",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -447,7 +447,7 @@
 											"var expectedMsisdn = pm.collectionVariables.replaceIn('{{generatedMsisdn}}');\r",
 											"console.log(\"obtained msisdn is: \"+expectedMsisdn)\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that PATCH request updated the contact\", function () {\r",
+											"pm.test(\"Check that PATCH request updated the contact\", function () {\r",
 											"    pm.expect(responseJson.address.msisdn).to.eql(expectedMsisdn);\r",
 											"});"
 										],
@@ -455,7 +455,7 @@
 									}
 								}
 							],
-							"_postman_id": "4835fc45-f69f-4c45-b528-8509ccdd3796",
+							"id": "4835fc45-f69f-4c45-b528-8509ccdd3796",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -526,7 +526,7 @@
 											"var expectedContactID = pm.variables.replaceIn('{{contactId}}');\r",
 											"var responseJson  = pm.response.json();\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+											"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 											"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 											"});\r",
 											"\r",
@@ -548,7 +548,7 @@
 											"  ]\r",
 											"};\r",
 											"\r",
-											"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+											"pm.test('Check if Schema is valid', function () {\r",
 											"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 											"});\r",
 											"\r",
@@ -559,7 +559,7 @@
 									}
 								}
 							],
-							"_postman_id": "0ae4dccd-cfeb-4f3f-8fd2-7927cbf86c2c",
+							"id": "0ae4dccd-cfeb-4f3f-8fd2-7927cbf86c2c",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -607,7 +607,7 @@
 											"var expectedMsisdn = pm.environment.replaceIn('{{msisdn}}');\r",
 											"console.log(\"obtained msisdn is: \"+expectedMsisdn)\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that PUT request updated the contact\", function () {\r",
+											"pm.test(\"Check that PUT request updated the contact\", function () {\r",
 											"    pm.expect(responseJson.address.msisdn).to.eql(expectedMsisdn);\r",
 											"});"
 										],
@@ -615,7 +615,7 @@
 									}
 								}
 							],
-							"_postman_id": "645f2bb4-9af6-4630-a1ef-6d825a2eaf9d",
+							"id": "645f2bb4-9af6-4630-a1ef-6d825a2eaf9d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -685,7 +685,7 @@
 											"\r",
 											"//var responseJson  = pm.response.json();\r",
 											"var schema = {}\r",
-											"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+											"pm.test('Check if Schema is valid', function () {\r",
 											"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 											"});\r",
 											"\r",
@@ -696,7 +696,7 @@
 									}
 								}
 							],
-							"_postman_id": "52e0e084-1533-4cc9-ace6-f57c2e767163",
+							"id": "52e0e084-1533-4cc9-ace6-f57c2e767163",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -744,7 +744,7 @@
 											"var expectedContactID = pm.variables.replaceIn('{{contactId}}');\r",
 											"var responseJson  = pm.response.json();\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+											"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 											"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 											"});\r",
 											"\r",
@@ -766,7 +766,7 @@
 											"  ]\r",
 											"};\r",
 											"\r",
-											"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+											"pm.test('Check if Schema is valid', function () {\r",
 											"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 											"});\r",
 											"\r",
@@ -777,7 +777,7 @@
 									}
 								}
 							],
-							"_postman_id": "13a26b07-c472-41d7-8291-c19c16d90794",
+							"id": "13a26b07-c472-41d7-8291-c19c16d90794",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -814,7 +814,7 @@
 							"response": []
 						}
 					],
-					"_postman_id": "66ea72ca-7993-4fe1-8349-5375b2893473",
+					"id": "66ea72ca-7993-4fe1-8349-5375b2893473",
 					"description": "Main functionality of the service - happy paths. Tests can be used as Smoke tests.\n\nStartFragment\n\n- Execute a POST request that creates a resource\n- then execute a GET request to check if it exists\n- then we use a PATCH endpoint to update new data\n- and we again invoke a GET request to validate the new data\n- same for PUT\n- then, we DELETE that resource\n- and we again invoke a GET request to validate that the resource does not exist anymore (inside DELETE request to not fail because of collection test in regards to Status Code - 404 in our case);\n- finally, re-create resource so that we can use it in other tests as an existing testdata.\n    \n\nEndFragment",
 					"event": [
 						{
@@ -833,7 +833,7 @@
 								"id": "3d2f2f4b-807b-42f8-9ea7-80e1261d7a3b",
 								"type": "text/javascript",
 								"exec": [
-									"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"FolderLevelTest1: Checking response status code to be one of 200, 201 or 204\", function () {",
+									"pm.test(\"FolderLevelTest1: Checking response status code to be one of 200, 201 or 204\", function () {",
 									"    const expectedStatusCodes = [200, 201, 204];",
 									"    var errorMessage = `expected response status to be one of ${expectedStatusCodes} but got ${pm.response.code}.`",
 									"    pm.expect(pm.response.code).to.be.oneOf(expectedStatusCodes, errorMessage);",
@@ -841,8 +841,7 @@
 								]
 							}
 						}
-					],
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "ExtendedPositiveTesting_WithOptionalParameters",
@@ -879,7 +878,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{guidForContactID}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -901,7 +900,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -912,7 +911,7 @@
 											}
 										}
 									],
-									"_postman_id": "4bbe0765-5f59-47fd-b9aa-d2b65305244f",
+									"id": "4bbe0765-5f59-47fd-b9aa-d2b65305244f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -958,7 +957,7 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check optional fields\", function () {\r",
+													"pm.test(\"Check optional fields\", function () {\r",
 													"    pm.expect(responseJson.properties.test).to.eql(\"test\");\r",
 													"    pm.expect(responseJson.properties.__displayName).to.eql(\"John Smith🤮\");\r",
 													"    pm.expect(responseJson.properties.Department).to.eql(\"Engineering\");\r",
@@ -968,7 +967,7 @@
 											}
 										}
 									],
-									"_postman_id": "20d3fe42-c324-490b-85c3-980e12e51376",
+									"id": "20d3fe42-c324-490b-85c3-980e12e51376",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1018,7 +1017,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{guidForContactID}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -1040,7 +1039,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -1051,7 +1050,7 @@
 											}
 										}
 									],
-									"_postman_id": "923bbc33-9ef1-4b75-86d6-8e8389517c45",
+									"id": "923bbc33-9ef1-4b75-86d6-8e8389517c45",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1097,7 +1096,7 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check optional fields\", function () {\r",
+													"pm.test(\"Check optional fields\", function () {\r",
 													"    pm.expect(responseJson.properties.test).to.eql(\"test\");\r",
 													"    pm.expect(responseJson.properties.__displayName).to.eql(\"John🤮 Smith🤮\");\r",
 													"    pm.expect(responseJson.properties.Department).to.eql(\"Engineering\");\r",
@@ -1107,7 +1106,7 @@
 											}
 										}
 									],
-									"_postman_id": "ec21e689-0590-4d52-b35b-b05efe07e04f",
+									"id": "ec21e689-0590-4d52-b35b-b05efe07e04f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1148,7 +1147,7 @@
 													"var expectedMsisdn = pm.variables.replaceIn('{{msisdn}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+													"pm.test(\"Check expected values\", function () {\r",
 													"    var resultsLength = responseJson.results.length;\r",
 													"    pm.expect(resultsLength, \"--no results--\").to.not.eql(0);\r",
 													"    //console.log(\"resultsLength:\"+resultsLength)\r",
@@ -1234,7 +1233,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													""
@@ -1253,7 +1252,7 @@
 											}
 										}
 									],
-									"_postman_id": "79f4ef72-883b-49c6-80a3-424910fc7f8e",
+									"id": "79f4ef72-883b-49c6-80a3-424910fc7f8e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1299,8 +1298,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "88a30bdb-8c99-4159-b7bd-c5b3feab9305",
-							"_postman_isSubFolder": true
+							"id": "88a30bdb-8c99-4159-b7bd-c5b3feab9305"
 						},
 						{
 							"name": "QueryStrings",
@@ -1320,7 +1318,7 @@
 															"var expectedMsisdn = pm.variables.replaceIn('{{msisdn}}');\r",
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+															"pm.test(\"Check expected values\", function () {\r",
 															"    var resultsLength = responseJson.results.length;\r",
 															"    pm.expect(resultsLength, \"--no results--\").to.not.eql(0);\r",
 															"    //console.log(\"resultsLength:\"+resultsLength)\r",
@@ -1408,7 +1406,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															""
@@ -1427,7 +1425,7 @@
 													}
 												}
 											],
-											"_postman_id": "d71369f8-fb4c-4bff-8a57-b2244148fd39",
+											"id": "d71369f8-fb4c-4bff-8a57-b2244148fd39",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -1483,7 +1481,7 @@
 															"var expectedAccountId = pm.variables.replaceIn('{{accountId}}');\r",
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+															"pm.test(\"Check expected values\", function () {\r",
 															"    var resultsLength = responseJson.results.length;\r",
 															"    pm.expect(resultsLength, \"--no results--\").to.not.eql(0);\r",
 															"    //console.log(\"resultsLength:\"+resultsLength)\r",
@@ -1571,7 +1569,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															""
@@ -1590,7 +1588,7 @@
 													}
 												}
 											],
-											"_postman_id": "f335b2a6-cd8f-4813-b905-629d1abfc722",
+											"id": "f335b2a6-cd8f-4813-b905-629d1abfc722",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -1646,7 +1644,7 @@
 															"var expectedAccountId = pm.variables.replaceIn('{{accountId}}');\r",
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+															"pm.test(\"Check expected values\", function () {\r",
 															"    var resultsLength = responseJson.results.length;\r",
 															"    pm.expect(resultsLength, \"--no results--\").to.not.eql(0);\r",
 															"    //console.log(\"resultsLength:\"+resultsLength)\r",
@@ -1732,7 +1730,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															""
@@ -1751,7 +1749,7 @@
 													}
 												}
 											],
-											"_postman_id": "13e06c50-19a9-44e1-8108-0bf3d9eace5c",
+											"id": "13e06c50-19a9-44e1-8108-0bf3d9eace5c",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -1797,8 +1795,7 @@
 											"response": []
 										}
 									],
-									"_postman_id": "4f42cbc5-80a4-4e7c-9747-1feb1eeb86fd",
-									"_postman_isSubFolder": true
+									"id": "4f42cbc5-80a4-4e7c-9747-1feb1eeb86fd"
 								},
 								{
 									"name": "Filter",
@@ -1837,7 +1834,7 @@
 															"var responseJson  = pm.response.json();\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+															"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 															"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 															"});\r",
 															"\r",
@@ -1859,7 +1856,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															"\r",
@@ -1870,7 +1867,7 @@
 													}
 												}
 											],
-											"_postman_id": "09b7e59b-1f8d-4e22-9893-6f97e0b6304c",
+											"id": "09b7e59b-1f8d-4e22-9893-6f97e0b6304c",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -1940,7 +1937,7 @@
 															"var responseJson  = pm.response.json();\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+															"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 															"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 															"});\r",
 															"\r",
@@ -1962,7 +1959,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															"\r",
@@ -1973,7 +1970,7 @@
 													}
 												}
 											],
-											"_postman_id": "1b7b630c-a1ed-4773-a6bf-d93f4e115b94",
+											"id": "1b7b630c-a1ed-4773-a6bf-d93f4e115b94",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -2043,7 +2040,7 @@
 															"var responseJson  = pm.response.json();\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+															"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 															"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 															"});\r",
 															"\r",
@@ -2065,7 +2062,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															"\r",
@@ -2076,7 +2073,7 @@
 													}
 												}
 											],
-											"_postman_id": "ec923459-eb1f-4c2e-9a9c-f87491aba2b0",
+											"id": "ec923459-eb1f-4c2e-9a9c-f87491aba2b0",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -2123,13 +2120,13 @@
 															"var expectedAccountId = pm.variables.replaceIn('{{accountId}}');\r",
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Checkcombined filter results\", function () {\r",
+															"pm.test(\"Checkcombined filter results\", function () {\r",
 															"    pm.expect(responseJson.results[0].accountId).to.eql(expectedAccountId);\r",
 															"    pm.expect(responseJson.results[0].properties.test).to.eql(\"test\");\r",
 															"    pm.expect(responseJson.results[0].properties.Department).to.eql(\"Engineering\");\r",
 															"});\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check count of returned results is 15 maximum\", function () {\r",
+															"pm.test(\"Check count of returned results is 15 maximum\", function () {\r",
 															"    pm.expect(responseJson.results.length).to.be.greaterThan(0);\r",
 															"    pm.expect(responseJson.results.length).to.eql(15);\r",
 															"\r",
@@ -2222,7 +2219,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															"\r",
@@ -2243,7 +2240,7 @@
 													}
 												}
 											],
-											"_postman_id": "d7c63a60-e11b-4133-a25d-157f55266d7c",
+											"id": "d7c63a60-e11b-4133-a25d-157f55266d7c",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -2303,7 +2300,7 @@
 															"var expectedAccountId = pm.variables.replaceIn('{{accountId}}');\r",
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+															"pm.test(\"Check expected values\", function () {\r",
 															"    var resultsLength = responseJson.results.length;\r",
 															"    pm.expect(resultsLength, \"--no results--\").to.not.eql(0);\r",
 															"    //console.log(\"resultsLength:\"+resultsLength)\r",
@@ -2391,7 +2388,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															""
@@ -2410,7 +2407,7 @@
 													}
 												}
 											],
-											"_postman_id": "2a902a27-dfd8-4271-9fcd-b1194f028536",
+											"id": "2a902a27-dfd8-4271-9fcd-b1194f028536",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -2465,7 +2462,7 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+															"pm.test(\"Check expected values\", function () {\r",
 															"    var resultsLength = responseJson.results.length;\r",
 															"    pm.expect(resultsLength, \"--no results--\").to.not.eql(0);\r",
 															"    //console.log(\"resultsLength:\"+resultsLength)\r",
@@ -2552,7 +2549,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															""
@@ -2571,7 +2568,7 @@
 													}
 												}
 											],
-											"_postman_id": "3d23e007-9133-4fa6-abad-f814874fac42",
+											"id": "3d23e007-9133-4fa6-abad-f814874fac42",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -2627,12 +2624,12 @@
 															"\r",
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected account and metadata - common values\", function () {\r",
+															"pm.test(\"Check expected account and metadata - common values\", function () {\r",
 															"    pm.expect(responseJson.results[0].address.msisdn).to.contain(\"477\");\r",
 															"    pm.expect(responseJson.results[0].properties.__displayName).to.contain(\"John\");\r",
 															"});\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check count of returned results is 15 maximum\", function () {\r",
+															"pm.test(\"Check count of returned results is 15 maximum\", function () {\r",
 															"    pm.expect(responseJson.results.length).to.be.gt(0);\r",
 															"\r",
 															"});\r",
@@ -2712,7 +2709,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});"
 														],
@@ -2730,7 +2727,7 @@
 													}
 												}
 											],
-											"_postman_id": "e1dbbdf6-b215-436e-9b6d-ebce374404cd",
+											"id": "e1dbbdf6-b215-436e-9b6d-ebce374404cd",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -2810,7 +2807,7 @@
 															"var responseJson  = pm.response.json();\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+															"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 															"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 															"});\r",
 															"\r",
@@ -2832,7 +2829,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});\r",
 															"\r",
@@ -2843,7 +2840,7 @@
 													}
 												}
 											],
-											"_postman_id": "f3464295-a9da-4dc8-a59f-11cc7356ba3f",
+											"id": "f3464295-a9da-4dc8-a59f-11cc7356ba3f",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -2889,7 +2886,7 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check results contain at least 1 item with the 5 filtered items and Check values\", function () {\r",
+															"pm.test(\"Check results contain at least 1 item with the 5 filtered items and Check values\", function () {\r",
 															"    var resultsLength = responseJson.results.length;\r",
 															"    pm.expect(resultsLength).to.be.greaterThan(0);\r",
 															"   \r",
@@ -2979,7 +2976,7 @@
 															"  ]\r",
 															"};\r",
 															"\r",
-															"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+															"pm.test('Check if Schema is valid', function () {\r",
 															"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 															"});"
 														],
@@ -2997,7 +2994,7 @@
 													}
 												}
 											],
-											"_postman_id": "07584794-e986-414b-9943-b23474b7d4a2",
+											"id": "07584794-e986-414b-9943-b23474b7d4a2",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -3058,12 +3055,10 @@
 											"response": []
 										}
 									],
-									"_postman_id": "7fb96175-7beb-4e7f-a356-b0699e57a865",
-									"_postman_isSubFolder": true
+									"id": "7fb96175-7beb-4e7f-a356-b0699e57a865"
 								}
 							],
-							"_postman_id": "8b7ecd50-4f12-47ce-946a-04093a161999",
-							"_postman_isSubFolder": true
+							"id": "8b7ecd50-4f12-47ce-946a-04093a161999"
 						},
 						{
 							"name": "RequestBodyParameters",
@@ -3097,7 +3092,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{guidForContactID}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -3119,7 +3114,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -3138,7 +3133,7 @@
 											}
 										}
 									],
-									"_postman_id": "346b9783-fc9a-433d-974c-e966022b6db9",
+									"id": "346b9783-fc9a-433d-974c-e966022b6db9",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3184,7 +3179,7 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check optional fields\", function () {\r",
+													"pm.test(\"Check optional fields\", function () {\r",
 													"    pm.expect(responseJson.properties.test).to.eql(\"test\");\r",
 													"    pm.expect(responseJson.properties.__displayName).to.eql(\"John Smith\");\r",
 													"    pm.expect(responseJson.properties.Department).to.eql(\"Engineering\");\r",
@@ -3194,7 +3189,7 @@
 											}
 										}
 									],
-									"_postman_id": "738214ca-2d70-4572-9229-980e1d9784c0",
+									"id": "738214ca-2d70-4572-9229-980e1d9784c0",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3233,7 +3228,7 @@
 													"var expectedMsisdn = pm.variables.replaceIn('{{msisdn}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+													"pm.test(\"Check expected values\", function () {\r",
 													"    pm.expect(responseJson.results[0].accountId).to.eql(expectedAccountId);\r",
 													"    pm.expect(responseJson.results[0].address.msisdn).to.eql(expectedMsisdn);\r",
 													"    pm.expect(responseJson.results[0].metadata.user).to.eql(\"user\");\r",
@@ -3316,7 +3311,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													""
@@ -3337,7 +3332,7 @@
 											}
 										}
 									],
-									"_postman_id": "981aa681-a191-434b-9440-1d33675ee64a",
+									"id": "981aa681-a191-434b-9440-1d33675ee64a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3393,7 +3388,7 @@
 													"var expectedAccountId = pm.variables.replaceIn('{{accountId}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+													"pm.test(\"Check expected values\", function () {\r",
 													"    var resultsLength = responseJson.results.length;\r",
 													"    //console.log(\"resultsLength:\"+resultsLength)\r",
 													"    for (var i=0; i<resultsLength; i++) {\r",
@@ -3481,7 +3476,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													""
@@ -3502,7 +3497,7 @@
 											}
 										}
 									],
-									"_postman_id": "352feec8-82da-4243-8d2a-354c928e7333",
+									"id": "352feec8-82da-4243-8d2a-354c928e7333",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3599,7 +3594,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{guidForContactID}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -3621,7 +3616,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -3638,7 +3633,7 @@
 											}
 										}
 									],
-									"_postman_id": "3720f076-7366-454f-87f6-dc95103369ce",
+									"id": "3720f076-7366-454f-87f6-dc95103369ce",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3688,7 +3683,7 @@
 													"var guidGenerated2 = pm.collectionVariables.replaceIn('{{guid2}}');\r",
 													"console.log(\"obtained guid2 is: \"+guidGenerated2)\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that PATCH request updated the contact\", function () {\r",
+													"pm.test(\"Check that PATCH request updated the contact\", function () {\r",
 													"    pm.expect(responseJson.properties.guidGenerated).to.eql(guidGenerated1);\r",
 													"    pm.expect(responseJson.properties.guidGeneratedNew).to.eql(guidGenerated2);\r",
 													"});"
@@ -3697,7 +3692,7 @@
 											}
 										}
 									],
-									"_postman_id": "66e4db2f-d5ce-4766-9be2-df2cf0cf65a8",
+									"id": "66e4db2f-d5ce-4766-9be2-df2cf0cf65a8",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3772,7 +3767,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{guidForContactID}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -3794,7 +3789,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -3811,7 +3806,7 @@
 											}
 										}
 									],
-									"_postman_id": "71490822-bbc8-41f4-8f0b-48c258f55d32",
+									"id": "71490822-bbc8-41f4-8f0b-48c258f55d32",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3859,7 +3854,7 @@
 													"var guidGenerated1 = pm.collectionVariables.replaceIn('{{guid1}}');\r",
 													"console.log(\"obtained guid1 is: \"+guidGenerated1)\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that PATCH request updated the contact\", function () {\r",
+													"pm.test(\"Check that PATCH request updated the contact\", function () {\r",
 													"    pm.expect(responseJson.properties.guidGeneratedNew).to.eql(guidGenerated1);\r",
 													"});"
 												],
@@ -3867,7 +3862,7 @@
 											}
 										}
 									],
-									"_postman_id": "ea9eecaf-93d2-486b-a8d1-32ae3111d274",
+									"id": "ea9eecaf-93d2-486b-a8d1-32ae3111d274",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -3943,7 +3938,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{contactId}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -3965,7 +3960,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -3982,7 +3977,7 @@
 											}
 										}
 									],
-									"_postman_id": "b461525c-f0c7-4dbc-bc08-3c1131ebe9fc",
+									"id": "b461525c-f0c7-4dbc-bc08-3c1131ebe9fc",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4030,7 +4025,7 @@
 													"var guidGenerated1 = pm.collectionVariables.replaceIn('{{guid1}}');\r",
 													"console.log(\"obtained guid1 is: \"+guidGenerated1)\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that PUT request updated the contact\", function () {\r",
+													"pm.test(\"Check that PUT request updated the contact\", function () {\r",
 													"    pm.expect(responseJson.properties.guidGenerated).to.eql(guidGenerated1);\r",
 													"});"
 												],
@@ -4038,7 +4033,7 @@
 											}
 										}
 									],
-									"_postman_id": "599bcbd8-b9a9-4e8c-890b-789e07934aee",
+									"id": "599bcbd8-b9a9-4e8c-890b-789e07934aee",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4093,7 +4088,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{guidForContactID}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -4115,7 +4110,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -4126,7 +4121,7 @@
 											}
 										}
 									],
-									"_postman_id": "672b9e71-be0c-4066-a029-5dd419d6a7cc",
+									"id": "672b9e71-be0c-4066-a029-5dd419d6a7cc",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4204,7 +4199,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{contactId}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -4226,7 +4221,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -4244,7 +4239,7 @@
 											}
 										}
 									],
-									"_postman_id": "c9f44295-6ea0-436a-9341-d49cfec8bb8f",
+									"id": "c9f44295-6ea0-436a-9341-d49cfec8bb8f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4301,7 +4296,7 @@
 													"var expectedContactID = pm.variables.replaceIn('{{contactId}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that the ContactID is the expected one\", function () {\r",
+													"pm.test(\"Check that the ContactID is the expected one\", function () {\r",
 													"    pm.expect(responseJson.contactId).to.eql(expectedContactID);\r",
 													"});\r",
 													"\r",
@@ -4323,7 +4318,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -4340,7 +4335,7 @@
 											}
 										}
 									],
-									"_postman_id": "540fe95c-56db-4ace-8910-2c73f02982c6",
+									"id": "540fe95c-56db-4ace-8910-2c73f02982c6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4388,7 +4383,7 @@
 													"var msisdn = pm.environment.replaceIn('{{msisdn}}');\r",
 													"console.log(\"obtained msisdn: \"+msisdn)\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that PATCH request did not update the contact - should see same msisdn\", function () {\r",
+													"pm.test(\"Check that PATCH request did not update the contact - should see same msisdn\", function () {\r",
 													"    pm.expect(responseJson.address.msisdn).to.eql(msisdn);\r",
 													"});"
 												],
@@ -4396,7 +4391,7 @@
 											}
 										}
 									],
-									"_postman_id": "63df9e61-1ef1-4aa0-a724-9b28eca529ab",
+									"id": "63df9e61-1ef1-4aa0-a724-9b28eca529ab",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4424,8 +4419,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "4075b1b3-7f8f-43e8-ba4a-936bca219517",
-							"_postman_isSubFolder": true
+							"id": "4075b1b3-7f8f-43e8-ba4a-936bca219517"
 						},
 						{
 							"name": "Other",
@@ -4471,7 +4465,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -4483,7 +4477,7 @@
 											}
 										}
 									],
-									"_postman_id": "f6f5719a-71a6-4324-8d2c-ba7aa0425d66",
+									"id": "f6f5719a-71a6-4324-8d2c-ba7aa0425d66",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4533,7 +4527,7 @@
 													"var expectedMsisdn = pm.variables.replaceIn('{{generatedMsisdn}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+													"pm.test(\"Check expected values\", function () {\r",
 													"    pm.expect(responseJson.id).to.eql(expectedContactID);\r",
 													"    pm.expect(responseJson.eTag).to.eql(expectedEtag);\r",
 													"    pm.expect(responseJson.accountId).to.eql(expectedAccountId);\r",
@@ -4605,7 +4599,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													""
@@ -4614,7 +4608,7 @@
 											}
 										}
 									],
-									"_postman_id": "b0539b52-f0b9-460c-a793-39ef5757ce26",
+									"id": "b0539b52-f0b9-460c-a793-39ef5757ce26",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4687,7 +4681,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													"\r",
@@ -4698,7 +4692,7 @@
 											}
 										}
 									],
-									"_postman_id": "0fd33627-655c-47ba-973c-b90af14d8948",
+									"id": "0fd33627-655c-47ba-973c-b90af14d8948",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4745,7 +4739,7 @@
 													"var expectedMsisdn = pm.variables.replaceIn('{{generatedMsisdn2}}');\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected values\", function () {\r",
+													"pm.test(\"Check expected values\", function () {\r",
 													"    pm.expect(responseJson.address.msisdn).to.eql(expectedMsisdn);\r",
 													"});\r",
 													"\r",
@@ -4812,7 +4806,7 @@
 													"  ]\r",
 													"};\r",
 													"\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													""
@@ -4821,7 +4815,7 @@
 											}
 										}
 									],
-									"_postman_id": "af1dab19-a82b-46f7-807e-a41c35bfe3ba",
+									"id": "af1dab19-a82b-46f7-807e-a41c35bfe3ba",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4849,11 +4843,10 @@
 									"response": []
 								}
 							],
-							"_postman_id": "f62662bd-9e3a-42aa-b278-1dbe215725f6",
-							"_postman_isSubFolder": true
+							"id": "f62662bd-9e3a-42aa-b278-1dbe215725f6"
 						}
 					],
-					"_postman_id": "2065ff3c-6325-4970-a23a-d8373ea0b0ca",
+					"id": "2065ff3c-6325-4970-a23a-d8373ea0b0ca",
 					"description": "Positive tests based on: optional parameters and extra functionality\n\nEndFragment",
 					"event": [
 						{
@@ -4872,7 +4865,7 @@
 								"id": "1df07a10-077b-41c2-9662-bc27324590ee",
 								"type": "text/javascript",
 								"exec": [
-									"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"FolderLevelTest1: Checking response status to be one of 200, 201 or 204\", function () {",
+									"pm.test(\"FolderLevelTest1: Checking response status to be one of 200, 201 or 204\", function () {",
 									"    const expectedStatusCodes = [200, 201, 204];",
 									"    var errorMessage = `expected response status to be one of ${expectedStatusCodes} but got ${pm.response.code}.`",
 									"    pm.expect(pm.response.code).to.be.oneOf(expectedStatusCodes, errorMessage);",
@@ -4880,8 +4873,7 @@
 								]
 							}
 						}
-					],
-					"_postman_isSubFolder": true
+					]
 				},
 				{
 					"name": "NegativeTesting_WithValidInput",
@@ -4907,11 +4899,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 404 NotFound\", function () {\r",
+													"pm.test(\"Status code is 404 NotFound\", function () {\r",
 													"    pm.response.to.have.status(404);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The requested contact could not be found.\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -4923,7 +4915,7 @@
 											}
 										}
 									],
-									"_postman_id": "0c52558e-ff8f-4185-be08-d35cef3b4f52",
+									"id": "0c52558e-ff8f-4185-be08-d35cef3b4f52",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -4968,11 +4960,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 404 NotFound\", function () {\r",
+													"pm.test(\"Status code is 404 NotFound\", function () {\r",
 													"    pm.response.to.have.status(404);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The requested contact could not be found.\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -4984,7 +4976,7 @@
 											}
 										}
 									],
-									"_postman_id": "434ae8a2-d686-4fc0-8246-9ecac59f6b81",
+									"id": "434ae8a2-d686-4fc0-8246-9ecac59f6b81",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5009,10 +5001,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{generatedMsisdn}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{generatedMsisdn}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/{{accountId}}/contacts/57aecf82-4e89-47c0-ad95-cf8120369605"
 									},
@@ -5036,11 +5025,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 404 Not Found\", function () {\r",
+													"pm.test(\"Status code is 404 Not Found\", function () {\r",
 													"    pm.response.to.have.status(404);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The requested contact could not be found.\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -5052,7 +5041,7 @@
 											}
 										}
 									],
-									"_postman_id": "51543cb2-59a0-4d08-9023-687efa5295d8",
+									"id": "51543cb2-59a0-4d08-9023-687efa5295d8",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5087,7 +5076,7 @@
 											"script": {
 												"id": "92bc4f22-e120-439c-851e-8d7c7d2a0af2",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 200\", function () {\r",
+													"pm.test(\"Status code is 200\", function () {\r",
 													"    pm.response.to.have.status(200);\r",
 													"});\r",
 													"\r",
@@ -5106,7 +5095,7 @@
 													"};\r",
 													"\r",
 													"var responseJson = pm.response.json();\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													""
@@ -5125,7 +5114,7 @@
 											}
 										}
 									],
-									"_postman_id": "7a922a4e-1895-4667-acab-3450e9b3a93a",
+									"id": "7a922a4e-1895-4667-acab-3450e9b3a93a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5178,7 +5167,7 @@
 											"script": {
 												"id": "92bc4f22-e120-439c-851e-8d7c7d2a0af2",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 200\", function () {\r",
+													"pm.test(\"Status code is 200\", function () {\r",
 													"    pm.response.to.have.status(200);\r",
 													"});\r",
 													"\r",
@@ -5197,7 +5186,7 @@
 													"};\r",
 													"\r",
 													"var responseJson = pm.response.json();\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													""
@@ -5216,7 +5205,7 @@
 											}
 										}
 									],
-									"_postman_id": "a5c6a2e2-a3f3-46cb-8500-f109dab83eac",
+									"id": "a5c6a2e2-a3f3-46cb-8500-f109dab83eac",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5269,7 +5258,7 @@
 											"script": {
 												"id": "92bc4f22-e120-439c-851e-8d7c7d2a0af2",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 200\", function () {\r",
+													"pm.test(\"Status code is 200\", function () {\r",
 													"    pm.response.to.have.status(200);\r",
 													"});\r",
 													"\r",
@@ -5288,7 +5277,7 @@
 													"};\r",
 													"\r",
 													"var responseJson = pm.response.json();\r",
-													"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+													"pm.test('Check if Schema is valid', function () {\r",
 													"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 													"});\r",
 													""
@@ -5307,7 +5296,7 @@
 											}
 										}
 									],
-									"_postman_id": "6b4bfada-af59-4cb2-9993-54e108a60815",
+									"id": "6b4bfada-af59-4cb2-9993-54e108a60815",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5370,7 +5359,7 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 204 NoContent\", function () {\r",
+													"pm.test(\"Status code is 204 NoContent\", function () {\r",
 													"    pm.response.to.have.status(204);\r",
 													"});\r",
 													"\r",
@@ -5380,7 +5369,7 @@
 											}
 										}
 									],
-									"_postman_id": "d1035c00-6221-4219-a9be-d58045070967",
+									"id": "d1035c00-6221-4219-a9be-d58045070967",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5408,8 +5397,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "51bdf41b-6271-4d12-ad42-f16967ab93c7",
-							"_postman_isSubFolder": true
+							"id": "51bdf41b-6271-4d12-ad42-f16967ab93c7"
 						},
 						{
 							"name": "Duplicate",
@@ -5432,11 +5420,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 409 conflict\", function () {\r",
+													"pm.test(\"Status code is 409 conflict\", function () {\r",
 													"    pm.response.to.have.status(409);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The contact id and the msisdn should be unique. In order to update an existing contact, use either PUT or PATCH\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -5447,7 +5435,7 @@
 											}
 										}
 									],
-									"_postman_id": "77ae58c3-2dd6-42fd-9c65-5465eeeaa08d",
+									"id": "77ae58c3-2dd6-42fd-9c65-5465eeeaa08d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5519,11 +5507,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 409 conflict\", function () {\r",
+													"pm.test(\"Status code is 409 conflict\", function () {\r",
 													"    pm.response.to.have.status(409);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The contact id and the msisdn should be unique. In order to update an existing contact, use either PUT or PATCH\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -5534,7 +5522,7 @@
 											}
 										}
 									],
-									"_postman_id": "a492c63f-783d-49e8-b7a5-690551e447ad",
+									"id": "a492c63f-783d-49e8-b7a5-690551e447ad",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5606,11 +5594,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 409 conflict\", function () {\r",
+													"pm.test(\"Status code is 409 conflict\", function () {\r",
 													"    pm.response.to.have.status(409);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The contact id and the msisdn should be unique. In order to update an existing contact, use either PUT or PATCH\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -5621,7 +5609,7 @@
 											}
 										}
 									],
-									"_postman_id": "f5ce006d-470a-4439-ab7a-83a50518b3ff",
+									"id": "f5ce006d-470a-4439-ab7a-83a50518b3ff",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5675,11 +5663,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 409 conflict\", function () {\r",
+													"pm.test(\"Status code is 409 conflict\", function () {\r",
 													"    pm.response.to.have.status(409);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The contact id and the msisdn should be unique. In order to update an existing contact, use either PUT or PATCH\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -5690,7 +5678,7 @@
 											}
 										}
 									],
-									"_postman_id": "a957f50e-8122-4c7b-8fa9-44b46ced7715",
+									"id": "a957f50e-8122-4c7b-8fa9-44b46ced7715",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5766,11 +5754,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 409 conflict\", function () {\r",
+													"pm.test(\"Status code is 409 conflict\", function () {\r",
 													"    pm.response.to.have.status(409);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The contact id and the msisdn should be unique. In order to update an existing contact, use either PUT or PATCH\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -5782,7 +5770,7 @@
 											}
 										}
 									],
-									"_postman_id": "03334d8d-8430-4b85-9343-5f4a1e93028e",
+									"id": "03334d8d-8430-4b85-9343-5f4a1e93028e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5858,11 +5846,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 409 conflict\", function () {\r",
+													"pm.test(\"Status code is 409 conflict\", function () {\r",
 													"    pm.response.to.have.status(409);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The contact id and the msisdn should be unique. In order to update an existing contact, use either PUT or PATCH\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -5874,7 +5862,7 @@
 											}
 										}
 									],
-									"_postman_id": "612ba0d1-bbed-443a-83d4-29bd0c8bb6cd",
+									"id": "612ba0d1-bbed-443a-83d4-29bd0c8bb6cd",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5911,8 +5899,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "e98d57d6-8be8-4fa3-996f-d264dc68b321",
-							"_postman_isSubFolder": true
+							"id": "e98d57d6-8be8-4fa3-996f-d264dc68b321"
 						},
 						{
 							"name": "UnAuthorized",
@@ -5937,12 +5924,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 401 Access Denied\", function () {\r",
+													"pm.test(\"Status code is 401 Access Denied\", function () {\r",
 													"    pm.response.to.have.status(401);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.message).to.eql(\"Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API.\");\r",
 													"});\r",
 													"\r",
@@ -5952,7 +5939,7 @@
 											}
 										}
 									],
-									"_postman_id": "39cdb57f-3d45-4377-ad8d-8d2104627e9f",
+									"id": "39cdb57f-3d45-4377-ad8d-8d2104627e9f",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -5990,13 +5977,11 @@
 									"response": []
 								}
 							],
-							"_postman_id": "a92e763e-7332-4780-af18-5135200b082f",
-							"_postman_isSubFolder": true
+							"id": "a92e763e-7332-4780-af18-5135200b082f"
 						}
 					],
-					"_postman_id": "4efc5885-ff26-4f1f-98a7-c0b34efdbc09",
-					"description": "Example:\n\nvalid user input - example: try to add an already existing item (with same ID)\n\nEndFragment",
-					"_postman_isSubFolder": true
+					"id": "4efc5885-ff26-4f1f-98a7-c0b34efdbc09",
+					"description": "Example:\n\nvalid user input - example: try to add an already existing item (with same ID)\n\nEndFragment"
 				},
 				{
 					"name": "NegativeTesting_WithInvalidInput",
@@ -6022,11 +6007,11 @@
 											"script": {
 												"id": "2b8b1d4b-10b6-46e5-9c97-3455e4c15ff0",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"Property value should be 150 characters or less\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -6037,7 +6022,7 @@
 											}
 										}
 									],
-									"_postman_id": "1d4488d8-86f7-4c24-8985-753f8c69ede4",
+									"id": "1d4488d8-86f7-4c24-8985-753f8c69ede4",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -6117,11 +6102,11 @@
 											"script": {
 												"id": "2b8b1d4b-10b6-46e5-9c97-3455e4c15ff0",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"Property value should be 150 characters or less\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -6132,7 +6117,7 @@
 											}
 										}
 									],
-									"_postman_id": "f411fa09-76b9-4f12-87b0-26dc23e77aa7",
+									"id": "f411fa09-76b9-4f12-87b0-26dc23e77aa7",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -6169,8 +6154,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "f9fba11f-9652-4a06-8272-467302df7f32",
-							"_postman_isSubFolder": true
+							"id": "f9fba11f-9652-4a06-8272-467302df7f32"
 						},
 						{
 							"name": "Required",
@@ -6201,12 +6185,12 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+															"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 															"    pm.expect(responseJson.errors[0].error).to.eql(\"X-Client-Product header is required\");\r",
 															"    pm.expect(responseJson.errors[0].code).to.eql(\"product_header_missing\");\r",
 															"});\r",
@@ -6217,7 +6201,7 @@
 													}
 												}
 											],
-											"_postman_id": "ac18bccf-e6b3-4f41-9960-fdf0da74f9f4",
+											"id": "ac18bccf-e6b3-4f41-9960-fdf0da74f9f4",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -6277,12 +6261,12 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+															"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 															"    pm.expect(responseJson.errors[0].error).to.eql(\"X-Client-Product header is required\");\r",
 															"    pm.expect(responseJson.errors[0].code).to.eql(\"product_header_missing\");\r",
 															"});\r",
@@ -6293,7 +6277,7 @@
 													}
 												}
 											],
-											"_postman_id": "d049569f-8365-4e88-95a3-77d2c8262e2f",
+											"id": "d049569f-8365-4e88-95a3-77d2c8262e2f",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -6353,12 +6337,12 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+															"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 															"    pm.expect(responseJson.errors[0].error).to.eql(\"X-Client-Product header is required\");\r",
 															"    pm.expect(responseJson.errors[0].code).to.eql(\"product_header_missing\");\r",
 															"});\r",
@@ -6369,7 +6353,7 @@
 													}
 												}
 											],
-											"_postman_id": "9e4e8fa3-5575-4ec0-b998-c539af5a7801",
+											"id": "9e4e8fa3-5575-4ec0-b998-c539af5a7801",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -6429,12 +6413,12 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+															"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 															"    pm.expect(responseJson.errors[0].error).to.eql(\"X-Client-User header is required\");\r",
 															"    pm.expect(responseJson.errors[0].code).to.eql(\"user_header_missing\");\r",
 															"});\r",
@@ -6445,7 +6429,7 @@
 													}
 												}
 											],
-											"_postman_id": "6ebbb6fc-0ff0-4278-9fbc-deb2cb41832f",
+											"id": "6ebbb6fc-0ff0-4278-9fbc-deb2cb41832f",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -6505,12 +6489,12 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+															"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 															"    pm.expect(responseJson.errors[0].error).to.eql(\"X-Client-User header is required\");\r",
 															"    pm.expect(responseJson.errors[0].code).to.eql(\"user_header_missing\");\r",
 															"});\r",
@@ -6521,7 +6505,7 @@
 													}
 												}
 											],
-											"_postman_id": "f66fc7c7-25df-427a-acb4-19fb701a23a0",
+											"id": "f66fc7c7-25df-427a-acb4-19fb701a23a0",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -6578,12 +6562,12 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+															"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 															"    pm.expect(responseJson.errors[0].error).to.eql(\"X-Client-Product header is required\");\r",
 															"    pm.expect(responseJson.errors[0].code).to.eql(\"product_header_missing\");\r",
 															"});\r",
@@ -6594,7 +6578,7 @@
 													}
 												}
 											],
-											"_postman_id": "684d2cbc-6659-4e63-bbf8-0e68a53e6098",
+											"id": "684d2cbc-6659-4e63-bbf8-0e68a53e6098",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -6654,12 +6638,12 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+															"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 															"    pm.expect(responseJson.errors[0].error).to.eql(\"X-Client-User header is required\");\r",
 															"    pm.expect(responseJson.errors[0].code).to.eql(\"user_header_missing\");\r",
 															"});\r",
@@ -6670,7 +6654,7 @@
 													}
 												}
 											],
-											"_postman_id": "18523029-b01b-423e-bca9-c39372870bf8",
+											"id": "18523029-b01b-423e-bca9-c39372870bf8",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -6727,12 +6711,12 @@
 														"exec": [
 															"var responseJson  = pm.response.json();\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+															"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 															"    pm.expect(responseJson.errors[0].error).to.eql(\"X-Client-Product header is required\");\r",
 															"    pm.expect(responseJson.errors[0].code).to.eql(\"product_header_missing\");\r",
 															"});\r",
@@ -6743,7 +6727,7 @@
 													}
 												}
 											],
-											"_postman_id": "31a1f7f4-1405-426d-81c1-12fd172ba226",
+											"id": "31a1f7f4-1405-426d-81c1-12fd172ba226",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -6781,8 +6765,7 @@
 											"response": []
 										}
 									],
-									"_postman_id": "f62d806c-f1c6-4ab6-839b-62278e1b06ae",
-									"_postman_isSubFolder": true
+									"id": "f62d806c-f1c6-4ab6-839b-62278e1b06ae"
 								},
 								{
 									"name": "Create_RequiredField_address",
@@ -6804,12 +6787,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The contact should have an address object\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"address_empty\");\r",
 													"});\r",
@@ -6820,7 +6803,7 @@
 											}
 										}
 									],
-									"_postman_id": "9049ff14-b425-469d-b906-44ab02db0572",
+									"id": "9049ff14-b425-469d-b906-44ab02db0572",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -6880,11 +6863,11 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The contact MSISDN should be set\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"msisdn_empty\");\r",
 													"});\r",
@@ -6895,7 +6878,7 @@
 											}
 										}
 									],
-									"_postman_id": "4bf0f9e1-2c9e-47ce-acfb-28476fa73f6e",
+									"id": "4bf0f9e1-2c9e-47ce-acfb-28476fa73f6e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -6951,12 +6934,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"An ETag must be supplied\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_missing\");\r",
 													"});\r",
@@ -6967,7 +6950,7 @@
 											}
 										}
 									],
-									"_postman_id": "e6131990-81b2-48ff-9cee-d84b0da3a4df",
+									"id": "e6131990-81b2-48ff-9cee-d84b0da3a4df",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7023,12 +7006,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"An ETag must be supplied\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_missing\");\r",
 													"});\r",
@@ -7039,7 +7022,7 @@
 											}
 										}
 									],
-									"_postman_id": "bb087586-e2c6-43df-848a-c415d72d2828",
+									"id": "bb087586-e2c6-43df-848a-c415d72d2828",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7120,12 +7103,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The contact should have an address object\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"address_empty\");\r",
 													"});\r",
@@ -7136,7 +7119,7 @@
 											}
 										}
 									],
-									"_postman_id": "82b1db63-149e-4e67-aaf4-a8698228be43",
+									"id": "82b1db63-149e-4e67-aaf4-a8698228be43",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7217,12 +7200,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The contact MSISDN should be set\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"msisdn_empty\");\r",
 													"});\r",
@@ -7233,7 +7216,7 @@
 											}
 										}
 									],
-									"_postman_id": "d38650ab-3ba9-4dbe-9229-a67c72a90f5c",
+									"id": "d38650ab-3ba9-4dbe-9229-a67c72a90f5c",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7270,8 +7253,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "26cadf0e-e2de-4f7c-8d06-021feb116a6e",
-							"_postman_isSubFolder": true
+							"id": "26cadf0e-e2de-4f7c-8d06-021feb116a6e"
 						},
 						{
 							"name": "Invalid",
@@ -7279,8 +7261,7 @@
 								{
 									"name": "IllegalCharacters",
 									"item": [],
-									"_postman_id": "5f09336a-5956-44bf-9c27-c753b31c95d5",
-									"_postman_isSubFolder": true
+									"id": "5f09336a-5956-44bf-9c27-c753b31c95d5"
 								},
 								{
 									"name": "GET_InvalidContact",
@@ -7300,11 +7281,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The given contact id could not be parsed to guid.\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7316,7 +7297,7 @@
 											}
 										}
 									],
-									"_postman_id": "91cc7c87-f0a1-4d19-aa65-2477ab3603eb",
+									"id": "91cc7c87-f0a1-4d19-aa65-2477ab3603eb",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7361,11 +7342,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The given contact id could not be parsed to guid.\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7377,7 +7358,7 @@
 											}
 										}
 									],
-									"_postman_id": "bd3c0b18-651c-4e6d-9ad0-272cde389b9e",
+									"id": "bd3c0b18-651c-4e6d-9ad0-272cde389b9e",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7402,10 +7383,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"address\":{\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"address\":{\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/{{accountId}}/contacts/NotGUID!"
 									},
@@ -7429,11 +7407,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The given contact id could not be parsed to guid.\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7445,7 +7423,7 @@
 											}
 										}
 									],
-									"_postman_id": "144ef358-3bc1-46a8-a5f2-7e3f8cb7e5e6",
+									"id": "144ef358-3bc1-46a8-a5f2-7e3f8cb7e5e6",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7470,10 +7448,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"address\":{\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"address\":{\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/{{accountId}}/contacts/NotGUID!"
 									},
@@ -7497,11 +7472,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"for non-guid account ids, the product must be in the format <country>.<brand>.<product>\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7513,7 +7488,7 @@
 											}
 										}
 									],
-									"_postman_id": "0ef18a41-82fd-4e6e-99c8-8c979d8b1167",
+									"id": "0ef18a41-82fd-4e6e-99c8-8c979d8b1167",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7538,10 +7513,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"address\":{\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"address\":{\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/NotGUID!/contacts/NotGUID!"
 									},
@@ -7565,11 +7537,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"for non-guid account ids, the product must be in the format <country>.<brand>.<product>\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7581,7 +7553,7 @@
 											}
 										}
 									],
-									"_postman_id": "524c612a-47e4-4937-bf0c-a973d345d17a",
+									"id": "524c612a-47e4-4937-bf0c-a973d345d17a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7606,10 +7578,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{generatedMsisdn}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{generatedMsisdn}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/NotGUID!/contacts/NotGUID!"
 									},
@@ -7633,11 +7602,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"for non-guid account ids, the product must be in the format <country>.<brand>.<product>\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7649,7 +7618,7 @@
 											}
 										}
 									],
-									"_postman_id": "29ec3ff9-570a-484c-8943-4e6be68813b8",
+									"id": "29ec3ff9-570a-484c-8943-4e6be68813b8",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7674,10 +7643,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{generatedMsisdn}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{generatedMsisdn}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/NotGUID!/contacts/{{contactId}}"
 									},
@@ -7701,11 +7667,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"for non-guid account ids, the product must be in the format <country>.<brand>.<product>\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7717,7 +7683,7 @@
 											}
 										}
 									],
-									"_postman_id": "a6c937d3-eabe-4440-8f4b-b2a2b974646b",
+									"id": "a6c937d3-eabe-4440-8f4b-b2a2b974646b",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7742,10 +7708,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{generatedMsisdn}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{generatedMsisdn}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/NotGUID!/contacts/{{contactId}}"
 									},
@@ -7769,11 +7732,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"for non-guid account ids, the product must be in the format <country>.<brand>.<product>\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7785,7 +7748,7 @@
 											}
 										}
 									],
-									"_postman_id": "3960ea41-cb3c-404a-b2ed-2768200fb660",
+									"id": "3960ea41-cb3c-404a-b2ed-2768200fb660",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7820,11 +7783,11 @@
 											"script": {
 												"id": "92bc4f22-e120-439c-851e-8d7c7d2a0af2",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 422 Unprocessable Entity\", function () {\r",
+													"pm.test(\"Status code is 422 Unprocessable Entity\", function () {\r",
 													"    pm.response.to.have.status(422);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The request contained malformed JSON, this is commonly caused by putting objects in property values\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7846,7 +7809,7 @@
 											}
 										}
 									],
-									"_postman_id": "4c32ea23-d49e-41be-99f6-51425cc378de",
+									"id": "4c32ea23-d49e-41be-99f6-51425cc378de",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7871,10 +7834,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    },\r\n    \"properties\": {,\r\n        \"guidGenerated\": \"{{guid1}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    },\r\n    \"properties\": {,\r\n        \"guidGenerated\": \"{{guid1}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/{{accountId}}/contacts/{{contactId}}"
 									},
@@ -7888,11 +7848,11 @@
 											"script": {
 												"id": "92bc4f22-e120-439c-851e-8d7c7d2a0af2",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 422 Unprocessable Entity\", function () {\r",
+													"pm.test(\"Status code is 422 Unprocessable Entity\", function () {\r",
 													"    pm.response.to.have.status(422);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The request contained malformed JSON, this is commonly caused by putting objects in property values\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7914,7 +7874,7 @@
 											}
 										}
 									],
-									"_postman_id": "b31f1892-1a80-4160-b0e5-26f860395d15",
+									"id": "b31f1892-1a80-4160-b0e5-26f860395d15",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -7939,10 +7899,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    },\r\n    \"properties\": {,\r\n        \"guidGenerated\": \"{{guid1}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    },\r\n    \"properties\": {,\r\n        \"guidGenerated\": \"{{guid1}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/{{accountId}}/contacts/{{contactId}}"
 									},
@@ -7956,11 +7913,11 @@
 											"script": {
 												"id": "92bc4f22-e120-439c-851e-8d7c7d2a0af2",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 422 Unprocessable Entity\", function () {\r",
+													"pm.test(\"Status code is 422 Unprocessable Entity\", function () {\r",
 													"    pm.response.to.have.status(422);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The request contained malformed JSON, this is commonly caused by putting objects in property values\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -7982,7 +7939,7 @@
 											}
 										}
 									],
-									"_postman_id": "0bcfc007-5532-44da-8815-25bd36cde5b4",
+									"id": "0bcfc007-5532-44da-8815-25bd36cde5b4",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8007,10 +7964,7 @@
 										],
 										"body": {
 											"mode": "raw",
-											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    },\r\n    \"properties\": {,\r\n        \"guidGenerated\": \"{{guid1}}\"\r\n    }\r\n}",
-											"options": {
-												"raw": {}
-											}
+											"raw": "{\r\n    \"etag\": \"{{etag}}\",\r\n    \"address\": {\r\n        \"msisdn\": \"{{msisdn}}\"\r\n    },\r\n    \"properties\": {,\r\n        \"guidGenerated\": \"{{guid1}}\"\r\n    }\r\n}"
 										},
 										"url": "{{hostname}}/v1/accounts/{{accountId}}/contacts/{{contactId}}"
 									},
@@ -8034,11 +7988,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The given contact id could not be parsed to guid.\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -8049,7 +8003,7 @@
 											}
 										}
 									],
-									"_postman_id": "9d91aed7-8d5e-4148-9b65-e6309e8a1395",
+									"id": "9d91aed7-8d5e-4148-9b65-e6309e8a1395",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8103,11 +8057,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The MSISDN should be in E.164 format\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -8118,7 +8072,7 @@
 											}
 										}
 									],
-									"_postman_id": "a7ec7c81-f019-4a9d-bc78-88acfe3b995a",
+									"id": "a7ec7c81-f019-4a9d-bc78-88acfe3b995a",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8172,11 +8126,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test.skip(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test.skip(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The contact MSISDN should be set\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -8189,7 +8143,7 @@
 											}
 										}
 									],
-									"_postman_id": "f0a2bbc8-cd43-4066-bcaf-cfb79b25e7b7",
+									"id": "f0a2bbc8-cd43-4066-bcaf-cfb79b25e7b7",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8243,11 +8197,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The MSISDN should be in E.164 format\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -8261,7 +8215,7 @@
 											}
 										}
 									],
-									"_postman_id": "4c16260e-aa44-42ba-9e64-91ee7753dd48",
+									"id": "4c16260e-aa44-42ba-9e64-91ee7753dd48",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8315,11 +8269,11 @@
 											"script": {
 												"id": "2ad9f0a5-3846-45a8-a135-e1b805e18367",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The MSISDN should be in E.164 format\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -8333,7 +8287,7 @@
 											}
 										}
 									],
-									"_postman_id": "908ea61e-9492-4a6a-943d-fd293baf353d",
+									"id": "908ea61e-9492-4a6a-943d-fd293baf353d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8389,12 +8343,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"An ETag must be supplied\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_missing\");\r",
 													"});\r",
@@ -8405,7 +8359,7 @@
 											}
 										}
 									],
-									"_postman_id": "ab902838-8328-4615-bf0b-f7ab951204b0",
+									"id": "ab902838-8328-4615-bf0b-f7ab951204b0",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8461,12 +8415,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test.skip(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test.skip(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The supplied ETag did not match\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_invalid\");\r",
 													"});\r",
@@ -8477,7 +8431,7 @@
 											}
 										}
 									],
-									"_postman_id": "05a1d67d-24d2-42e1-b0cc-b6abd2ec3a39",
+									"id": "05a1d67d-24d2-42e1-b0cc-b6abd2ec3a39",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8533,12 +8487,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test.skip(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test.skip(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The supplied ETag did not match\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_invalid\");\r",
 													"});\r",
@@ -8549,7 +8503,7 @@
 											}
 										}
 									],
-									"_postman_id": "1a05265b-2192-42ef-ad8b-05fdd9c6d51d",
+									"id": "1a05265b-2192-42ef-ad8b-05fdd9c6d51d",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8605,12 +8559,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The supplied ETag did not match\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_invalid\");\r",
 													"});\r",
@@ -8620,7 +8574,7 @@
 											}
 										}
 									],
-									"_postman_id": "abebb1a2-9ee1-463a-bb8e-5ea2a5731ecb",
+									"id": "abebb1a2-9ee1-463a-bb8e-5ea2a5731ecb",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8676,12 +8630,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test.skip(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test.skip(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The supplied ETag did not match\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_invalid\");\r",
 													"});\r",
@@ -8695,7 +8649,7 @@
 											}
 										}
 									],
-									"_postman_id": "d51c0258-484a-4074-ad68-3f2b4d63ec7c",
+									"id": "d51c0258-484a-4074-ad68-3f2b4d63ec7c",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8751,12 +8705,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test.skip(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test.skip(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The supplied ETag did not match\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_invalid\");\r",
 													"});\r",
@@ -8770,7 +8724,7 @@
 											}
 										}
 									],
-									"_postman_id": "c46eb346-3a0e-45fb-b620-e9a6405c54cd",
+									"id": "c46eb346-3a0e-45fb-b620-e9a6405c54cd",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8826,12 +8780,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The supplied ETag did not match\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_invalid\");\r",
 													"});\r",
@@ -8841,7 +8795,7 @@
 											}
 										}
 									],
-									"_postman_id": "f5cf418b-332e-44b3-802e-2e32900ea471",
+									"id": "f5cf418b-332e-44b3-802e-2e32900ea471",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8897,12 +8851,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 428 Precondition Required\", function () {\r",
+													"pm.test(\"Status code is 428 Precondition Required\", function () {\r",
 													"    pm.response.to.have.status(428);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"The supplied ETag did not match\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"etag_invalid\");\r",
 													"});\r",
@@ -8912,7 +8866,7 @@
 											}
 										}
 									],
-									"_postman_id": "fd84433e-fa58-4a31-b112-d9db32e260e5",
+									"id": "fd84433e-fa58-4a31-b112-d9db32e260e5",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -8966,11 +8920,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"The given contact id could not be parsed to guid.\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -8982,7 +8936,7 @@
 											}
 										}
 									],
-									"_postman_id": "35a55a98-62cc-4196-a249-0d28677537b8",
+									"id": "35a55a98-62cc-4196-a249-0d28677537b8",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9027,11 +8981,11 @@
 											"script": {
 												"id": "6576d1fd-dc97-4464-8240-68ae68802a33",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code\", function() {\r",
 													"var expectedErrorMessage = \"for non-guid account ids, the product must be in the format <country>.<brand>.<product>\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -9043,7 +8997,7 @@
 											}
 										}
 									],
-									"_postman_id": "eb97663e-1bb6-4257-9edd-e5de3b1049d2",
+									"id": "eb97663e-1bb6-4257-9edd-e5de3b1049d2",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9080,12 +9034,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"'search' is a reserved keyword and cannot be used as a key\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"invalidkey\");\r",
 													"});\r",
@@ -9109,7 +9063,7 @@
 											}
 										}
 									],
-									"_postman_id": "9ba37a82-573e-4b14-b024-99b3b02f2713",
+									"id": "9ba37a82-573e-4b14-b024-99b3b02f2713",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9168,12 +9122,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message and code for request: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.errors[0].error).to.eql(\"'filters' is a reserved keyword and cannot be used as a key\");\r",
 													"    pm.expect(responseJson.errors[0].code).to.eql(\"invalidkey\");\r",
 													"});\r",
@@ -9197,7 +9151,7 @@
 											}
 										}
 									],
-									"_postman_id": "0f750cb5-7357-4ae5-a2eb-f2f9d5efadca",
+									"id": "0f750cb5-7357-4ae5-a2eb-f2f9d5efadca",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9256,13 +9210,13 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 200\", function () {\r",
+													"pm.test(\"Status code is 200\", function () {\r",
 													"    pm.response.to.have.status(200);\r",
 													"});\r",
 													"\r",
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check that no results are returned\", function () {\r",
+													"pm.test(\"Check that no results are returned\", function () {\r",
 													"    var resultsLength = responseJson.results.length;\r",
 													"    pm.expect(resultsLength).to.eql(0);\r",
 													"});"
@@ -9281,7 +9235,7 @@
 											}
 										}
 									],
-									"_postman_id": "313396d5-9dd4-4f1d-b419-fb1dc17ea813",
+									"id": "313396d5-9dd4-4f1d-b419-fb1dc17ea813",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9327,8 +9281,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "c75fa5bd-ad71-493d-b52b-063bd23f05be",
-							"_postman_isSubFolder": true
+							"id": "c75fa5bd-ad71-493d-b52b-063bd23f05be"
 						},
 						{
 							"name": "InvalidAuthorization",
@@ -9353,12 +9306,12 @@
 												"exec": [
 													"var responseJson  = pm.response.json();\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 401 Access Denied\", function () {\r",
+													"pm.test(\"Status code is 401 Access Denied\", function () {\r",
 													"    pm.response.to.have.status(401);\r",
 													"});\r",
 													"\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected error message: \"+pm.info.requestName, function () {\r",
+													"pm.test(\"Check expected error message: \"+pm.info.requestName, function () {\r",
 													"    pm.expect(responseJson.message).to.eql(\"Access denied due to invalid subscription key. Make sure to provide a valid key for an active subscription.\");\r",
 													"});\r",
 													"\r",
@@ -9368,7 +9321,7 @@
 											}
 										}
 									],
-									"_postman_id": "9d47770d-39b1-4222-b996-b9466f6e13ea",
+									"id": "9d47770d-39b1-4222-b996-b9466f6e13ea",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9405,8 +9358,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "413da029-a7cc-46b9-be32-4a28023f8db8",
-							"_postman_isSubFolder": true
+							"id": "413da029-a7cc-46b9-be32-4a28023f8db8"
 						},
 						{
 							"name": "MultipleErrors",
@@ -9455,18 +9407,18 @@
 											"script": {
 												"id": "2b8b1d4b-10b6-46e5-9c97-3455e4c15ff0",
 												"exec": [
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad request\", function () {\r",
+													"pm.test(\"Status code is 400 Bad request\", function () {\r",
 													"    pm.response.to.have.status(400);\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code set1\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code set1\", function() {\r",
 													"var expectedErrorMessage = \"The MSISDN should be in E.164 format\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
 													"pm.expect(jsonData.errors[0].code).to.eql(\"msisdn_invalid\");\r",
 													"});\r",
 													"\r",
-													"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code set2\", function() {\r",
+													"pm.test(\"Response body contains expected error message and code set2\", function() {\r",
 													"var expectedErrorMessage = \"Property value should be 150 characters or less\";\r",
 													"var jsonData = pm.response.json();\r",
 													"pm.expect(jsonData.errors[1].error).to.eql(expectedErrorMessage);\r",
@@ -9477,7 +9429,7 @@
 											}
 										}
 									],
-									"_postman_id": "b80abf46-ef1d-41a4-bac6-7ed9cb4a9162",
+									"id": "b80abf46-ef1d-41a4-bac6-7ed9cb4a9162",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -9514,8 +9466,7 @@
 									"response": []
 								}
 							],
-							"_postman_id": "7c949bad-ca2d-4ecc-8cd0-ec3c17d37438",
-							"_postman_isSubFolder": true
+							"id": "7c949bad-ca2d-4ecc-8cd0-ec3c17d37438"
 						},
 						{
 							"name": "QueryStrings",
@@ -9531,11 +9482,11 @@
 													"script": {
 														"id": "92bc4f22-e120-439c-851e-8d7c7d2a0af2",
 														"exec": [
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Status code is 400 Bad Request\", function () {\r",
+															"pm.test(\"Status code is 400 Bad Request\", function () {\r",
 															"    pm.response.to.have.status(400);\r",
 															"});\r",
 															"\r",
-															"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Response body contains expected error message and code\", function() {\r",
+															"pm.test(\"Response body contains expected error message and code\", function() {\r",
 															"var expectedErrorMessage = \"A maximum of 5 filters can be provided\";\r",
 															"var jsonData = pm.response.json();\r",
 															"pm.expect(jsonData.errors[0].error).to.eql(expectedErrorMessage);\r",
@@ -9557,7 +9508,7 @@
 													}
 												}
 											],
-											"_postman_id": "20575885-670e-49bb-9a53-1c03f362a189",
+											"id": "20575885-670e-49bb-9a53-1c03f362a189",
 											"protocolProfileBehavior": {
 												"disableBodyPruning": true
 											},
@@ -9622,17 +9573,14 @@
 											"response": []
 										}
 									],
-									"_postman_id": "dd870ddd-c2c8-4f33-928e-a746bc163fb4",
-									"_postman_isSubFolder": true
+									"id": "dd870ddd-c2c8-4f33-928e-a746bc163fb4"
 								}
 							],
-							"_postman_id": "85c7f1aa-c723-48e7-9bcd-ec072ba99efc",
-							"_postman_isSubFolder": true
+							"id": "85c7f1aa-c723-48e7-9bcd-ec072ba99efc"
 						}
 					],
-					"_postman_id": "2bb32fb2-62ac-4aab-9b80-1fcd1af67918",
-					"description": "invalid input (trying to add a property which is null or other invalid input - for example a NULL msisdn\n\nEndFragment",
-					"_postman_isSubFolder": true
+					"id": "2bb32fb2-62ac-4aab-9b80-1fcd1af67918",
+					"description": "invalid input (trying to add a property which is null or other invalid input - for example a NULL msisdn\n\nEndFragment"
 				},
 				{
 					"name": "Other",
@@ -9649,13 +9597,13 @@
 											"var expectedMsisdn = pm.variables.replaceIn('{{msisdn}}');\r",
 											"var responseJson  = pm.response.json();\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected account and metadata - common values\", function () {\r",
+											"pm.test(\"Check expected account and metadata - common values\", function () {\r",
 											"    pm.expect(responseJson.results[0].accountId).to.eql(expectedAccountId);\r",
 											"    pm.expect(responseJson.results[0].metadata.user).to.eql(\"user\");\r",
 											"    pm.expect(responseJson.results[0].metadata.product).to.eql(\"someProduct\");\r",
 											"});\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check count of returned results is 15 maximum\", function () {\r",
+											"pm.test(\"Check count of returned results is 15 maximum\", function () {\r",
 											"    pm.expect(responseJson.results.length).to.eql(15);\r",
 											"\r",
 											"});\r",
@@ -9747,7 +9695,7 @@
 											"  ]\r",
 											"};\r",
 											"\r",
-											"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+											"pm.test('Check if Schema is valid', function () {\r",
 											"    pm.expect(tv4.validate(responseJson, schema)).to.be.true;\r",
 											"});\r",
 											"\r",
@@ -9768,7 +9716,7 @@
 									}
 								}
 							],
-							"_postman_id": "98345cf0-8c33-4703-8c9f-2c9c66e0b214",
+							"id": "98345cf0-8c33-4703-8c9f-2c9c66e0b214",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -9807,13 +9755,13 @@
 											"var expectedMsisdn = pm.variables.replaceIn('{{msisdn}}');\r",
 											"var responseJson  = pm.response.json();\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check expected account and metadata - common values\", function () {\r",
+											"pm.test(\"Check expected account and metadata - common values\", function () {\r",
 											"    pm.expect(responseJson.results[0].accountId).to.eql(expectedAccountId);\r",
 											"    pm.expect(responseJson.results[0].metadata.user).to.eql(\"user\");\r",
 											"    pm.expect(responseJson.results[0].metadata.product).to.eql(\"someProduct\");\r",
 											"});\r",
 											"\r",
-											"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"Check count of returned results is not 0\", function () {\r",
+											"pm.test(\"Check count of returned results is not 0\", function () {\r",
 											"    pm.expect(responseJson.results.length).to.not.eql(0);\r",
 											"\r",
 											"});\r",
@@ -9988,7 +9936,7 @@
 											"  ]\r",
 											"};\r",
 											"\r",
-											"pm.test('RequestName_'+pm.info.requestName+'_TestName_'+'Check if Schema is valid', function () {\r",
+											"pm.test('Check if Schema is valid', function () {\r",
 											"    pm.expect(tv4.validate(responseJson, schemaWithoutContinuationToken)).to.be.true;\r",
 											"});\r",
 											""
@@ -10012,7 +9960,7 @@
 									}
 								}
 							],
-							"_postman_id": "6d24f0d9-1160-4e7c-b91a-db0b95c9fce6",
+							"id": "6d24f0d9-1160-4e7c-b91a-db0b95c9fce6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -10040,19 +9988,18 @@
 							"response": []
 						}
 					],
-					"_postman_id": "a1a75a83-4b5d-43fe-8d35-76673aaae62f",
-					"description": "DestructiveTesting? intentionally attempt to break the API to check its robustness  \nSecurity, authorization, and permission tests?",
-					"_postman_isSubFolder": true
+					"id": "a1a75a83-4b5d-43fe-8d35-76673aaae62f",
+					"description": "DestructiveTesting? intentionally attempt to break the API to check its robustness  \nSecurity, authorization, and permission tests?"
 				}
 			],
-			"_postman_id": "57ef7edb-2b44-4d28-b535-536f02b8fc34"
+			"id": "57ef7edb-2b44-4d28-b535-536f02b8fc34"
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "242bbce6-3c9c-4379-863d-601ad0292c8c",
+				"id": "bfe56a72-710d-4674-ba1b-934bae319a84",
 				"type": "text/javascript",
 				"exec": [
 					"//Pre-request Collection level",
@@ -10065,11 +10012,11 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "2e114e3f-6cd7-4ac4-9c47-d5c25610d043",
+				"id": "a25e7b01-2141-4179-bf7b-619e2d3306b8",
 				"type": "text/javascript",
 				"exec": [
 					"/*",
-					"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"CollectionLevelTest1: Checking request code is 200, 201 or 204\", function () {",
+					"pm.test(\"CollectionLevelTest1: Checking  code is 200, 201 or 204\", function () {",
 					"    const expectedStatusCodes = [200, 201, 204];",
 					"    var errorMessage = `expected response status to be one of ${expectedStatusCodes} but got ${pm.response.code}.`",
 					"    pm.expect(pm.response.code).to.be.oneOf(expectedStatusCodes, errorMessage);",
@@ -10077,7 +10024,7 @@
 					"",
 					"*/",
 					"//Performance tests",
-					"pm.test(\"RequestName_\"+pm.info.requestName+\"_TestName_\"+\"CollectionLevelTest1: Check Response time is less than 200ms\", function () {",
+					"pm.test(\"CollectionLevelTest1: Check Response time is less than 200ms\", function () {",
 					"    pm.expect(pm.response.responseTime, \"response time was: \" + pm.response.responseTime).to.be.below(200);",
 					"});"
 				]
@@ -10086,106 +10033,89 @@
 	],
 	"variable": [
 		{
-			"id": "6d78f3b3-551d-4fb3-9567-123518842a9d",
+			"id": "8c92d083-e651-4b15-9348-7acc8cee312b",
 			"key": "etag",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "67b06a1d-8b9b-48b1-b45c-1ab63f92e2e6",
+			"id": "db957e21-df66-499d-8ccf-ed7c04538d58",
 			"key": "guidGenerated1",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "d4280c13-be4e-4680-91ae-a65eb13349fd",
+			"id": "656c87c7-33e8-42ea-b2df-aa45426803f9",
 			"key": "guid1",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "55e3fad2-850d-4a38-a74e-e0c6284f3666",
+			"id": "58b4222e-04a3-41e9-9c4e-3acbe615d642",
 			"key": "generatedMsisdn",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "27bed07e-4633-4f54-8ed4-e6a30d7fd552",
+			"id": "3ad542a8-7ee5-4a3f-95ad-a86dba046928",
 			"key": "guidForContactID",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "50a06622-7b9a-4fc0-9571-7d5dbdc4cbf6",
+			"id": "1d03256f-faa4-4328-b032-24ed60690b92",
 			"key": "etagCreate_OptionalFields_WithEmoji",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "807ba3d5-cabc-490c-b794-1ebb84919c5f",
+			"id": "1bfa3789-bbea-4dc3-9885-15b34a5a5ba0",
 			"key": "searchMetadata",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "515153e2-c555-4d23-be6d-8df9212fca63",
+			"id": "be9e0cba-e141-4f04-a2ce-5c7f2170f0e4",
 			"key": "searchPartialMsisdn",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "4c163f27-0bd7-46b2-b22f-8915717203f5",
+			"id": "fd8242d6-c042-4e0b-8523-887cd7015088",
 			"key": "uniqueFilter",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "8225486a-11e1-4795-989b-402d2ac1d2e8",
+			"id": "8663af91-afb7-477f-b5d0-fed8cb4ddad5",
 			"key": "etagFilter",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "400dc6bd-ab5d-482e-a6bd-03a4f789d55f",
+			"id": "4d049923-95cb-40c2-9908-dd7ed63b07f4",
 			"key": "continuationToken",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "5dac7c64-fea2-4d02-994d-1314bb6f5489",
+			"id": "85638da8-8462-4b55-8dc7-d1371246993a",
 			"key": "newEncodedMsisdn",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "5af2cf63-5553-412a-b2f1-424e5bae0104",
+			"id": "b28dd1ba-39ef-4301-a2a1-9860d9aebbd7",
 			"key": "guid2",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "46e08652-c266-4c4c-9d31-f4f04f8e2254",
+			"id": "f8e4428a-4575-4599-a9f3-15ac8e801b77",
 			"key": "etagCreate_OptionalFields",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "4bd9ae77-a678-4f83-b68b-47465ef1ff3a",
+			"id": "a3f2fd33-7a7a-458a-8821-7d4aba19d16b",
 			"key": "generatedContactID",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "e518672e-d066-40cb-aa55-d1ecf44d37f0",
+			"id": "09b81523-bd08-4cf2-bf9e-03a4e35f081e",
 			"key": "generatedMsisdn1",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
-			"id": "e28a640a-c376-49bf-abcf-470cf2e0e279",
+			"id": "1cbfe79d-39c0-4b36-b321-873b762143eb",
 			"key": "generatedMsisdn2",
-			"value": "",
-			"type": "string"
+			"value": ""
 		}
 	]
 }
