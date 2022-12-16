@@ -10482,7 +10482,7 @@
 			]
 		},
 		{
-			"name": "Groups",
+			"name": "GroupsOld",
 			"item": [
 				{
 					"name": "CreateGroup",
@@ -10702,96 +10702,97 @@
 		},
 		{
 			"name": "Other",
-			"item": [],
+			"item": [
+				{
+					"name": "Healthcheck",
+					"id": "059aa1e0-8f0a-48b0-b0dd-5d0f428ec2fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Subscription-Key",
+								"value": "{{X-Subscription-Key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostname}}/healthcheck",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"healthcheck"
+							],
+							"query": [
+								{
+									"key": "code",
+									"value": "oOUcu9yxpRgH0xG45IdmROmTNdPYu9WkyqR1fZK3KLXjX2cMdrlunEV7xZixxOSB",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "clientId",
+									"value": "API-M",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetForAccount",
+					"id": "688697c9-b42f-4209-9ea8-4713031aa0c8",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "X-Client-User",
+								"value": "user",
+								"type": "text"
+							},
+							{
+								"key": "X-Client-Product",
+								"value": "someProduct",
+								"type": "text"
+							},
+							{
+								"key": "X-Subscription-Key",
+								"value": "{{X-Subscription-Key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{hostname}}/v1/accounts/{{accountId}}/contacts?filters=test",
+							"host": [
+								"{{hostname}}"
+							],
+							"path": [
+								"v1",
+								"accounts",
+								"{{accountId}}",
+								"contacts"
+							],
+							"query": [
+								{
+									"key": "filters",
+									"value": "test",
+									"type": "text"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"id": "b7222827-2400-47a4-93ce-5da9f04700c0"
-		},
-		{
-			"name": "Healthcheck",
-			"id": "059aa1e0-8f0a-48b0-b0dd-5d0f428ec2fb",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-Subscription-Key",
-						"value": "{{X-Subscription-Key}}",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{hostname}}/healthcheck",
-					"host": [
-						"{{hostname}}"
-					],
-					"path": [
-						"healthcheck"
-					],
-					"query": [
-						{
-							"key": "code",
-							"value": "oOUcu9yxpRgH0xG45IdmROmTNdPYu9WkyqR1fZK3KLXjX2cMdrlunEV7xZixxOSB",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "clientId",
-							"value": "API-M",
-							"type": "text",
-							"disabled": true
-						}
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "GetForAccount",
-			"id": "688697c9-b42f-4209-9ea8-4713031aa0c8",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [
-					{
-						"key": "X-Client-User",
-						"value": "user",
-						"type": "text"
-					},
-					{
-						"key": "X-Client-Product",
-						"value": "someProduct",
-						"type": "text"
-					},
-					{
-						"key": "X-Subscription-Key",
-						"value": "{{X-Subscription-Key}}",
-						"type": "text"
-					}
-				],
-				"url": {
-					"raw": "{{hostname}}/v1/accounts/{{accountId}}/contacts?filters=test",
-					"host": [
-						"{{hostname}}"
-					],
-					"path": [
-						"v1",
-						"accounts",
-						"{{accountId}}",
-						"contacts"
-					],
-					"query": [
-						{
-							"key": "filters",
-							"value": "test",
-							"type": "text"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"event": [
@@ -10824,87 +10825,87 @@
 	],
 	"variable": [
 		{
-			"id": "21242748-cde8-4374-8766-2dd5b7f0f1c2",
+			"id": "f0cd9087-2e58-4339-b6bf-b070afde7631",
 			"key": "etag",
 			"value": ""
 		},
 		{
-			"id": "e4be9281-d58a-4dc2-a5df-1cec432fda3e",
+			"id": "d2ffdaa7-17f2-4139-9a7e-e069f0b5fcd8",
 			"key": "guidGenerated1",
 			"value": ""
 		},
 		{
-			"id": "59ea9786-c1dd-46b7-b79a-62d6a6cd4a1f",
+			"id": "61f685da-9648-41f3-92ed-9ae575ca05f2",
 			"key": "guid1",
 			"value": ""
 		},
 		{
-			"id": "1ae3bb2c-8236-4011-ba9d-0d134ba72913",
+			"id": "329fdf0d-0e67-4919-aa37-88350ba9cab9",
 			"key": "generatedMsisdn",
 			"value": ""
 		},
 		{
-			"id": "c714b80d-2565-4a2b-8be8-c29e633e7104",
+			"id": "649a90c9-5367-4eb7-9ef5-00745893d1c7",
 			"key": "guidForContactID",
 			"value": ""
 		},
 		{
-			"id": "9d544127-9b10-480f-9b60-b345acffbff1",
+			"id": "06e6ab50-ea72-4fb1-9b28-96fac15ba5d7",
 			"key": "etagCreate_OptionalFields_WithEmoji",
 			"value": ""
 		},
 		{
-			"id": "621c00c0-17fd-4cdb-88d5-af90b974512e",
+			"id": "4f1581bd-47cd-46a8-93c5-590922023f35",
 			"key": "searchMetadata",
 			"value": ""
 		},
 		{
-			"id": "d4918fbd-57ff-4413-bf94-4666febdd53e",
+			"id": "29442bcc-3757-41b1-85b4-269d18988d7f",
 			"key": "searchPartialMsisdn",
 			"value": ""
 		},
 		{
-			"id": "8d9dfb78-4ab1-43b6-a470-8f67c54df004",
+			"id": "36c8ef0f-52ff-464f-87b2-be97f728e056",
 			"key": "uniqueFilter",
 			"value": ""
 		},
 		{
-			"id": "4dff2830-0a2c-439a-9cc4-e8cc8215a078",
+			"id": "db7f568f-63c1-401d-aae2-e3cb621dea6e",
 			"key": "etagFilter",
 			"value": ""
 		},
 		{
-			"id": "bcb5b09f-8a86-4b00-b655-0121549b43b5",
+			"id": "d86990c8-3b81-4833-ac3a-5bf6722c6a65",
 			"key": "continuationToken",
 			"value": ""
 		},
 		{
-			"id": "c25ef741-bfa4-4913-90be-16377ef0a31c",
+			"id": "dfbf2e32-0186-4922-84d4-c789b744ec83",
 			"key": "newEncodedMsisdn",
 			"value": ""
 		},
 		{
-			"id": "36a994a5-a624-46fb-9238-c75939e24858",
+			"id": "c46a4305-a0a2-46c0-9113-a2a0fbf78e11",
 			"key": "guid2",
 			"value": ""
 		},
 		{
-			"id": "3e0a83e0-04b5-4fa2-a004-572cc3011652",
+			"id": "bfb39a27-0513-4182-9b86-dc4d298ace6b",
 			"key": "etagCreate_OptionalFields",
 			"value": ""
 		},
 		{
-			"id": "60e1bb06-1008-4cd6-9c1d-46f130c4c19c",
+			"id": "8148cc40-49fa-4225-9f8b-599f1a3cd745",
 			"key": "generatedContactID",
 			"value": ""
 		},
 		{
-			"id": "220e65df-26cf-4949-b1b7-c6c2b0e5b3ad",
+			"id": "3629a7e4-db35-4684-ab43-2b34aeb05ab9",
 			"key": "generatedMsisdn1",
 			"value": ""
 		},
 		{
-			"id": "ee177c68-0f8f-4741-b3d0-b4f272ce78e9",
+			"id": "c48d02e9-e454-4658-92de-cd6c1a9f8fa3",
 			"key": "generatedMsisdn2",
 			"value": ""
 		}
