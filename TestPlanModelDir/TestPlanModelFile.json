@@ -9999,7 +9999,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "bfe56a72-710d-4674-ba1b-934bae319a84",
+				"id": "6200c0f2-8835-4b93-94b6-94f1cda60782",
 				"type": "text/javascript",
 				"exec": [
 					"//Pre-request Collection level",
@@ -10012,17 +10012,9 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "a25e7b01-2141-4179-bf7b-619e2d3306b8",
+				"id": "ffee489d-9b4c-411e-9ebc-db49c4dcfb5b",
 				"type": "text/javascript",
 				"exec": [
-					"/*",
-					"pm.test(\"CollectionLevelTest1: Checking  code is 200, 201 or 204\", function () {",
-					"    const expectedStatusCodes = [200, 201, 204];",
-					"    var errorMessage = `expected response status to be one of ${expectedStatusCodes} but got ${pm.response.code}.`",
-					"    pm.expect(pm.response.code).to.be.oneOf(expectedStatusCodes, errorMessage);",
-					"});",
-					"",
-					"*/",
 					"//Performance tests",
 					"pm.test(\"CollectionLevelTest1: Check Response time is less than 200ms\", function () {",
 					"    pm.expect(pm.response.responseTime, \"response time was: \" + pm.response.responseTime).to.be.below(200);",
@@ -10033,87 +10025,87 @@
 	],
 	"variable": [
 		{
-			"id": "8c92d083-e651-4b15-9348-7acc8cee312b",
+			"id": "4375afbe-3c4a-4ee8-bb74-472c506781e4",
 			"key": "etag",
 			"value": ""
 		},
 		{
-			"id": "db957e21-df66-499d-8ccf-ed7c04538d58",
+			"id": "90dfe030-0bbc-4860-be3e-e123e3e2ec0b",
 			"key": "guidGenerated1",
 			"value": ""
 		},
 		{
-			"id": "656c87c7-33e8-42ea-b2df-aa45426803f9",
+			"id": "4d51d5bf-1933-4531-9136-21663ca4358b",
 			"key": "guid1",
 			"value": ""
 		},
 		{
-			"id": "58b4222e-04a3-41e9-9c4e-3acbe615d642",
+			"id": "f6617712-539b-44e4-8c6c-d942ffe11b35",
 			"key": "generatedMsisdn",
 			"value": ""
 		},
 		{
-			"id": "3ad542a8-7ee5-4a3f-95ad-a86dba046928",
+			"id": "9cfb1222-56e7-40ab-94fa-9ebb7a1a6966",
 			"key": "guidForContactID",
 			"value": ""
 		},
 		{
-			"id": "1d03256f-faa4-4328-b032-24ed60690b92",
+			"id": "b266aabf-416f-4146-b7b3-9b6ced63e6fa",
 			"key": "etagCreate_OptionalFields_WithEmoji",
 			"value": ""
 		},
 		{
-			"id": "1bfa3789-bbea-4dc3-9885-15b34a5a5ba0",
+			"id": "cf5ee091-dc20-4f83-81b0-3dab9b385436",
 			"key": "searchMetadata",
 			"value": ""
 		},
 		{
-			"id": "be9e0cba-e141-4f04-a2ce-5c7f2170f0e4",
+			"id": "268ba147-3d97-40a1-88d8-5b4a3c94540f",
 			"key": "searchPartialMsisdn",
 			"value": ""
 		},
 		{
-			"id": "fd8242d6-c042-4e0b-8523-887cd7015088",
+			"id": "006441a2-6cbe-4bad-8a8e-cc8e7da057db",
 			"key": "uniqueFilter",
 			"value": ""
 		},
 		{
-			"id": "8663af91-afb7-477f-b5d0-fed8cb4ddad5",
+			"id": "c6a0842f-d2d9-4b66-be92-73b1bc9b9cfc",
 			"key": "etagFilter",
 			"value": ""
 		},
 		{
-			"id": "4d049923-95cb-40c2-9908-dd7ed63b07f4",
+			"id": "c435cc94-72ba-4c26-b0ef-67255ee23a2f",
 			"key": "continuationToken",
 			"value": ""
 		},
 		{
-			"id": "85638da8-8462-4b55-8dc7-d1371246993a",
+			"id": "4ba2ef09-7354-4dc6-9935-b5e0700b0e53",
 			"key": "newEncodedMsisdn",
 			"value": ""
 		},
 		{
-			"id": "b28dd1ba-39ef-4301-a2a1-9860d9aebbd7",
+			"id": "f79277d2-21c5-47f8-92ca-84868d760c36",
 			"key": "guid2",
 			"value": ""
 		},
 		{
-			"id": "f8e4428a-4575-4599-a9f3-15ac8e801b77",
+			"id": "b811d25d-9789-4378-a764-1b553022fa73",
 			"key": "etagCreate_OptionalFields",
 			"value": ""
 		},
 		{
-			"id": "a3f2fd33-7a7a-458a-8821-7d4aba19d16b",
+			"id": "dde97ddc-687c-4835-b910-051c824d1665",
 			"key": "generatedContactID",
 			"value": ""
 		},
 		{
-			"id": "09b81523-bd08-4cf2-bf9e-03a4e35f081e",
+			"id": "8c37c59d-48d7-43fb-af25-fa3186dc4bf4",
 			"key": "generatedMsisdn1",
 			"value": ""
 		},
 		{
-			"id": "1cbfe79d-39c0-4b36-b321-873b762143eb",
+			"id": "67291bfb-c02e-4755-b617-75b0105ef83a",
 			"key": "generatedMsisdn2",
 			"value": ""
 		}
