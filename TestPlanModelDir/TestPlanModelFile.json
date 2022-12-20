@@ -10072,7 +10072,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "6200c0f2-8835-4b93-94b6-94f1cda60782",
+				"id": "0932cf72-f1ed-4909-91a0-f561a4510fcd",
 				"type": "text/javascript",
 				"exec": [
 					"//Pre-request Collection level",
@@ -10085,10 +10085,10 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ffee489d-9b4c-411e-9ebc-db49c4dcfb5b",
+				"id": "3481de63-9c27-43be-9da5-305b32d55dbd",
 				"type": "text/javascript",
 				"exec": [
-					"//Performance tests",
+					"/*Performance tests*/",
 					"pm.test(\"CollectionLevelTest1: Check Response time is less than 200ms\", function () {",
 					"    pm.expect(pm.response.responseTime, \"response time was: \" + pm.response.responseTime).to.be.below(200);",
 					"});"
@@ -10098,87 +10098,87 @@
 	],
 	"variable": [
 		{
-			"id": "e0ef6cb3-0f4b-424c-bca0-a4de12f6868e",
+			"id": "a6ac51d7-5cb4-4071-b109-a6fef6740f1d",
 			"key": "etag",
 			"value": ""
 		},
 		{
-			"id": "e66062e2-9802-4738-a7f4-c2216b6834ce",
+			"id": "bd864005-05cb-450a-b3e9-c4ecc12465b6",
 			"key": "guidGenerated1",
 			"value": ""
 		},
 		{
-			"id": "a1b37863-f05d-4164-a438-ef0af2926e5b",
+			"id": "14affdc9-cd07-4932-9c7a-c5f7a52a1e14",
 			"key": "guid1",
 			"value": ""
 		},
 		{
-			"id": "cd658c04-56db-4878-8572-568e56fcb304",
+			"id": "545227eb-cd89-404e-95ee-c2a4b4fb70c9",
 			"key": "generatedMsisdn",
 			"value": ""
 		},
 		{
-			"id": "8f69f7b4-9cc6-43d3-a8a5-a68560cea47e",
+			"id": "4f1f3b73-e85a-4d7b-b0d4-d0a029700521",
 			"key": "guidForContactID",
 			"value": ""
 		},
 		{
-			"id": "b79b9172-fbee-4e3d-921e-e8f77031eaad",
+			"id": "edb31926-af5c-4e44-a035-7741d588cf83",
 			"key": "etagCreate_OptionalFields_WithEmoji",
 			"value": ""
 		},
 		{
-			"id": "e9c06dac-3e19-4ce2-acec-0bdad41a53e2",
+			"id": "652bb652-8752-4447-b07d-f8edf992f97a",
 			"key": "searchMetadata",
 			"value": ""
 		},
 		{
-			"id": "d3da7000-9a63-4dad-a711-d3801638ae1c",
+			"id": "fc6a1618-9c04-4a1a-bedd-0c934ad168d0",
 			"key": "searchPartialMsisdn",
 			"value": ""
 		},
 		{
-			"id": "4178a4ed-af64-4ee4-9999-85c0f2074318",
+			"id": "c27d00fe-0eab-4596-a822-9d8e91a81163",
 			"key": "uniqueFilter",
 			"value": ""
 		},
 		{
-			"id": "b6b0ebfe-bdc0-4268-99fc-b1348216a6e3",
+			"id": "05d0148e-90d6-479b-bbc2-f21f8a3dbb6c",
 			"key": "etagFilter",
 			"value": ""
 		},
 		{
-			"id": "d1ce993b-185a-4125-acb7-4c776cd87749",
+			"id": "9ac33366-2884-4217-919c-719945c8f72c",
 			"key": "continuationToken",
 			"value": ""
 		},
 		{
-			"id": "2db2813e-da38-402d-8a2f-ef5d3a68f5ea",
+			"id": "30eba3fe-457d-43e9-8c3a-0521aaff58b3",
 			"key": "newEncodedMsisdn",
 			"value": ""
 		},
 		{
-			"id": "2bf55306-b588-463f-99dc-2e30a1c5971f",
+			"id": "3d3e2402-2c39-477b-b925-9235d9e03db9",
 			"key": "guid2",
 			"value": ""
 		},
 		{
-			"id": "2945d35c-aa93-4f95-8a7e-3df41335ef94",
+			"id": "25341cab-d100-4125-8a7e-1c985328e0d6",
 			"key": "etagCreate_OptionalFields",
 			"value": ""
 		},
 		{
-			"id": "54eea688-9317-4527-b534-193125a84752",
+			"id": "77a3bd1a-c03b-44c7-9dac-ad3a8f1724de",
 			"key": "generatedContactID",
 			"value": ""
 		},
 		{
-			"id": "4dfbf7a7-0dae-4ab0-bbb8-ccc19b24422f",
+			"id": "1d2c0e03-d740-4483-8129-cffc70c35003",
 			"key": "generatedMsisdn1",
 			"value": ""
 		},
 		{
-			"id": "0bfc8003-0225-4fbb-b33d-f00d98421653",
+			"id": "e3572bf9-8a11-4a40-a514-6ca73e54ffa5",
 			"key": "generatedMsisdn2",
 			"value": ""
 		}
