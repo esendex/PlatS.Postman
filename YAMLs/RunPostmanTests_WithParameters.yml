@@ -59,7 +59,6 @@ jobs:
     continueOnError: True
     timeoutInMinutes: 30
     inputs:
-    - ${{ if eq(length(parameters.foo), 0) }}:
       script: >
         newman run Collections/${{ parameters.collection }} -e Environments/${{ parameters.environment }}  --reporters cli,junit,htmlextra --reporter-junit-export Results\junitReport.xml --reporter-htmlextra-export Results\htmlExtraReport.html --timeout 300000 --verbose ${{variables.withFolder}}
   - task: PublishTestResults@2
