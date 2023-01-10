@@ -1,0 +1,64 @@
+name: $(date:yyyyMMdd)$(rev:.r)
+resources:
+  repositories:
+  - repository: self
+    type: git
+    ref: refs/heads/main
+    
+parameters:
+- name: collection
+  displayName: Collection
+  type: string
+  default: ContactsCollectionFile.json
+  values:
+  - ContactsCollectionFile.json
+  - ContactsApiBulkCollectionFile.json
+
+- name: environment
+  displayName: Environment
+  type: string
+  default: DevContacts.postman_environment.json
+  values:
+  - DevContacts.postman_environment.json
+  
+- name: specifiedFolder
+  displayName: Folder
+  type: string
+  default: ""
+
+
+jobs:
+- job: Job_1
+  displayName: 'Postman API Testing '
+  pool:
+    vmImage: ubuntu-latest
+  steps:
+  - checkout: self
+    clean: true
+    fetchTags: false
+  - task: Npm@1
+    displayName: 'Install Newman '
+    inputs:
+      command: custom
+      verbose: false
+      customCommand: install newman -g
+  - task: Npm@1
+    displayName: Install Report HtmlExtra
+    inputs:
+      command: custom
+      verbose: false
+      customCommand: 'install newman-reporter-htmlextra -g '
+  - task: CmdLine@2
+    displayName: 'Run tests '
+    continueOnError: True
+    timeoutInMinutes: 30
+    inputs:
+      script: >
+        newman run Collections/${{ parameters.collection }} -e Environments/${{ parameters.environment }}  --reporters cli,junit,htmlextra --reporter-junit-export Results\junitReport.xml --reporter-htmlextra-export Results\htmlExtraReport.html --timeout 300000 --verbose --folder ${{ parameters.specifiedFolder }}
+  - task: PublishTestResults@2
+    displayName: Publish Test Results
+    inputs:
+      testResultsFiles: '**/*.xml'
+  - task: UploadPostmanHtmlReport@1
+    displayName: Upload Postman Html Report
+...
