@@ -20283,7 +20283,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "4e777491-9573-4c1e-b84f-80f4f59b7db3",
+				"id": "62c448af-42bc-474b-8b1a-63c396197668",
 				"type": "text/javascript",
 				"exec": [
 					"//Pre-request Collection level",
@@ -20296,212 +20296,212 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "74637577-24d8-4dc1-a5fb-3f77fad8843c",
+				"id": "9ba79a98-7b35-49b9-b272-129f84b18d00",
 				"type": "text/javascript",
 				"exec": [
 					"/*",
-					"Performance tests*/",
+					"Performance tests",
 					"pm.test(\"Request_\"+pm.info.requestName+\"_Test_CollectionLevelTest1: Check Response time is less than 500ms\", function () {",
 					"    pm.expect(pm.response.responseTime, \"response time was: \" + pm.response.responseTime).to.be.below(500);",
 					"});",
-					""
+					"*/"
 				]
 			}
 		}
 	],
 	"variable": [
 		{
-			"id": "808ee718-c989-4e21-9c9e-b1c3351d9827",
+			"id": "143c4cef-25fb-446a-85fa-02b720c368c0",
 			"key": "etag",
 			"value": ""
 		},
 		{
-			"id": "7517d3e2-395a-4a34-88fa-ffb60782ad84",
+			"id": "87dcdf53-00b6-43da-990b-3717d647cd09",
 			"key": "guid1",
 			"value": ""
 		},
 		{
-			"id": "4fc3b38a-e6ae-4cce-925e-620642862f0c",
+			"id": "08424ad4-9f18-4010-b396-cd0ab2216ae9",
 			"key": "generatedMsisdn",
 			"value": ""
 		},
 		{
-			"id": "42cab50c-89f8-43dc-8d07-b27eb678142a",
+			"id": "de82a3b5-7cef-4cd2-8d56-90ef9a667cbe",
 			"key": "guidGenerated1",
 			"value": ""
 		},
 		{
-			"id": "a5a84e77-c0ad-4de9-aa9c-6ceb80b6a6b1",
+			"id": "686ec17c-1584-4b71-84e4-977f356c282b",
 			"key": "guidForContactID",
 			"value": ""
 		},
 		{
-			"id": "099f5ad6-baaa-4f5b-9c6c-b85c43c7b318",
+			"id": "6f5890ac-5c5a-4a42-9d79-4da53148f091",
 			"key": "etagCreate_OptionalFields_WithEmoji",
 			"value": ""
 		},
 		{
-			"id": "10f0f0d0-0f0b-4b20-a1d0-c389c7bb4d2a",
+			"id": "457685c1-0737-4701-a2b3-a8674091a661",
 			"key": "searchMetadata",
 			"value": ""
 		},
 		{
-			"id": "930898cf-bec6-4e93-94d0-03c13ef3376b",
+			"id": "f9bf9c91-7145-4dcb-aa4e-12e441045cc4",
 			"key": "searchPartialMsisdn",
 			"value": ""
 		},
 		{
-			"id": "04ed31d9-822e-411c-9cbb-878c22d926db",
+			"id": "0e7b610d-5293-45fa-bc32-360407aa492e",
 			"key": "uniqueFilter",
 			"value": ""
 		},
 		{
-			"id": "3ed0d814-99d4-4e99-968a-34cf10025c59",
+			"id": "6406ac59-27ad-4b6e-b687-f4885d77254e",
 			"key": "etagFilter",
 			"value": ""
 		},
 		{
-			"id": "11458c63-e2d9-45b0-975e-bd4a2c97032b",
+			"id": "08777d7b-068c-4109-8b7f-e4c2aa570d18",
 			"key": "continuationToken",
 			"value": ""
 		},
 		{
-			"id": "c89c299d-bfd1-432c-a210-50a3823f0c39",
+			"id": "32249ca7-f537-41ad-8f2f-add7d017c59b",
 			"key": "etagCreate_OptionalFields",
 			"value": ""
 		},
 		{
-			"id": "8003cb08-700c-4d7b-99f9-50ec4edaf4c6",
+			"id": "40387531-b2fe-4b04-9a03-0fe42adf7d15",
 			"key": "newEncodedMsisdn",
 			"value": ""
 		},
 		{
-			"id": "c8695b2e-b4da-4920-8bab-e3da0d0850a5",
+			"id": "bfcf2669-fe1c-418a-8f79-d05e1f9220e6",
 			"key": "guid2",
 			"value": ""
 		},
 		{
-			"id": "1b4a2023-db20-499e-9c14-b8309e517217",
+			"id": "ebb06ac7-9a64-49fb-b5ea-8002894da56b",
 			"key": "generatedContactID",
 			"value": ""
 		},
 		{
-			"id": "c7774150-228e-4e57-bf77-88bdc4c8021c",
+			"id": "fc4fcc93-0b61-46fc-b982-2a9813852115",
 			"key": "generatedMsisdn1",
 			"value": ""
 		},
 		{
-			"id": "49c5a5e8-4d1a-410c-9def-ead049c1e3cb",
+			"id": "8dade88f-e6d6-4506-93b3-a2b150eb9b2f",
 			"key": "generatedMsisdn2",
 			"value": ""
 		},
 		{
-			"id": "d7a508d0-1755-41a9-bef6-ec078067b8be",
+			"id": "56341f97-5cbf-4df1-9097-ec746b411736",
 			"key": "groupName",
 			"value": ""
 		},
 		{
-			"id": "8bd5a730-010d-4279-83b0-7fd4e968e034",
+			"id": "e9b78ef9-7d77-4be6-9a2b-e611d24f523e",
 			"key": "groupNameUpdated",
 			"value": ""
 		},
 		{
-			"id": "d599f170-01a1-4ce9-8fe7-3f3f5a19527b",
+			"id": "4a4c3d1f-ee98-47d1-95ae-fafdc65e14ec",
 			"key": "guidForgroupId",
 			"value": ""
 		},
 		{
-			"id": "a749e72c-52b7-46ea-b680-cd61195b2cb8",
+			"id": "183a2c4c-08a4-4be5-bb63-59d4df15a24f",
 			"key": "emojiGroupName",
 			"value": ""
 		},
 		{
-			"id": "95d6f8b5-b628-4230-a2f5-cfb120856cdb",
+			"id": "d1302db3-f024-49a4-a462-a2af80c94b66",
 			"key": "emojiGroupDescription",
 			"value": ""
 		},
 		{
-			"id": "4817c333-ba51-4a4d-b66b-5e64ab0173d1",
+			"id": "10246962-f4fe-4ebb-82c8-099e568c54f3",
 			"key": "searchItem",
 			"value": ""
 		},
 		{
-			"id": "de2c3744-5048-455e-b55b-4d7edcc6ae93",
+			"id": "5a971f42-8809-4359-bfbd-fec9ca17d565",
 			"key": "searchItemLarge",
 			"value": ""
 		},
 		{
-			"id": "3be10314-3786-4600-beb6-02497953cb82",
+			"id": "3bb5fa8f-ec47-4186-8d4e-8abe35d7da38",
 			"key": "newOptionalGroupName",
 			"value": ""
 		},
 		{
-			"id": "0bc32716-e938-4676-af66-94e3e68039cd",
+			"id": "33118e4f-783a-414a-a972-23b2e1df9268",
 			"key": "newOptionalGroupDescription",
 			"value": ""
 		},
 		{
-			"id": "6e86da82-cbef-49ba-9c3b-67f908f53435",
+			"id": "b6418949-3452-41fb-91a2-ca3efa0b90f4",
 			"key": "updatedDescriptionByPatch",
 			"value": ""
 		},
 		{
-			"id": "5d2c830a-cfb5-41a5-a649-b953634c5f6f",
+			"id": "577b94a8-645d-4c62-a2a2-b3f4bac83c54",
 			"key": "groupName_OptionalFields",
 			"value": ""
 		},
 		{
-			"id": "7632d3f7-f8bc-4a1b-945e-6c67d3d35b52",
+			"id": "bbaa4b84-773f-41bb-846e-82b8702fd7d0",
 			"key": "generatedGroupNameWithoutID",
 			"value": ""
 		},
 		{
-			"id": "952fb731-8627-43f2-bf0c-46d448b8890f",
+			"id": "241bfdc0-5880-45d0-835b-e087863512be",
 			"key": "generatedgroupId",
 			"value": ""
 		},
 		{
-			"id": "6f0e5f3e-64ed-4743-be94-9f156da0471f",
+			"id": "d093a07b-1d5e-4a98-b3e1-717de926bd05",
 			"key": "contactId1",
 			"value": ""
 		},
 		{
-			"id": "94b49401-34c8-4580-9895-9b00463fdeb2",
+			"id": "5612d545-631a-4c30-bc12-fc919fcf83cf",
 			"key": "msisdn1",
 			"value": ""
 		},
 		{
-			"id": "e775be9b-bcde-438f-afca-fe06048154ec",
+			"id": "b4326c71-538a-4228-924d-0b388b4b95ee",
 			"key": "contactId2",
 			"value": ""
 		},
 		{
-			"id": "77574935-d9a6-411a-a9a8-8b4401cfee42",
+			"id": "7095e437-a9f6-437c-b6d3-aea482c5c073",
 			"key": "msisdn2",
 			"value": ""
 		},
 		{
-			"id": "565adb93-41c8-4ab8-a4db-196ff94cc4d8",
+			"id": "c5887f97-2533-4f3b-a46d-75a5790cbb21",
 			"key": "contactId3",
 			"value": ""
 		},
 		{
-			"id": "a4fe19f6-7d9d-4d84-aec0-25e70f272a33",
+			"id": "5b4ff6e9-53c6-45d3-ac3e-ac568fd37d1a",
 			"key": "groupIdWithContacts",
 			"value": ""
 		},
 		{
-			"id": "580f8d4e-b98e-4be0-9558-9bff1cd8d84d",
+			"id": "aac16d69-863f-4189-ab59-e8ca986c0384",
 			"key": "groupIdWithContactsName",
 			"value": ""
 		},
 		{
-			"id": "7868f363-98ba-455d-af13-28b34a86d5b9",
+			"id": "9dc7824e-de97-461f-8391-fd6345fec247",
 			"key": "groupIdWithoutContacts",
 			"value": ""
 		},
 		{
-			"id": "d64e270f-522f-4e43-9cbb-c28409453af3",
+			"id": "7536b1b4-f0b6-4edd-97dc-7b17a8c5f2de",
 			"key": "groupIdWithoutContactsName",
 			"value": ""
 		}
