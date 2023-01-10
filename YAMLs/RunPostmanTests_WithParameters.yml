@@ -24,7 +24,7 @@ parameters:
 - name: specifiedFolder
   displayName: Folder
   type: string
-  default: ""
+  default: " "
 
 
 jobs:
