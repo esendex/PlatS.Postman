@@ -26,6 +26,12 @@ parameters:
   type: string
   default: " "
 
+variables:
+  - name: withFolder
+    ${{ if eq( parameters['specifiedFolder'], ' ') }}:
+      value: ""
+    ${{ else }}:
+      value: "--folder ${{ parameters.specifiedFolder }}"
 
 jobs:
 - job: Job_1
@@ -53,8 +59,9 @@ jobs:
     continueOnError: True
     timeoutInMinutes: 30
     inputs:
+    - ${{ if eq(length(parameters.foo), 0) }}:
       script: >
-        newman run Collections/${{ parameters.collection }} -e Environments/${{ parameters.environment }}  --reporters cli,junit,htmlextra --reporter-junit-export Results\junitReport.xml --reporter-htmlextra-export Results\htmlExtraReport.html --timeout 300000 --verbose --folder ${{ parameters.specifiedFolder }}
+        newman run Collections/${{ parameters.collection }} -e Environments/${{ parameters.environment }}  --reporters cli,junit,htmlextra --reporter-junit-export Results\junitReport.xml --reporter-htmlextra-export Results\htmlExtraReport.html --timeout 300000 --verbose ${{variables.withFolder}}
   - task: PublishTestResults@2
     displayName: Publish Test Results
     inputs:
